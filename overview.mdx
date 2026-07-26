@@ -1,0 +1,34 @@
+---
+title: Garden overview
+status: active
+---
+
+# Garden overview
+
+This page uses Git Leaf’s restricted MDX-lite components. The content remains plain text in Git and does
+not execute arbitrary JSX or scripts.
+
+<MetricGrid title="April snapshot">
+```csv
+label,value,note,status
+Shared plots,12,Growing plots cared for by volunteers,good
+Active projects,3,Projects with work this month,neutral
+Upcoming events,1,Public event being planned,neutral
+Open questions,3,Questions awaiting a decision,watch
+```
+</MetricGrid>
+
+<Timeline title="Spring plan">
+```json
+[
+  {"date":"2026-03-02","title":"Knowledge base started","body":"The first durable decision was recorded.","status":"done"},
+  {"date":"2026-04-18","title":"Bed preparation","body":"Volunteers prepare soil and repair labels.","status":"active"},
+  {"date":"2026-05-09","title":"Open-day review","body":"Owners confirm the route and rain plan."},
+  {"date":"2026-05-16","title":"Spring open day","body":"Neighbors visit the garden."}
+]
+```
+</Timeline>
+
+<DecisionBox title="Keep Git as the source of truth" status="accepted" owner="Garden volunteers" source="decisions/0001-git-is-the-source-of-truth.md">
+The repository is the knowledge base. Git Leaf helps people maintain it, and AI agents use the same files.
+</DecisionBox>
