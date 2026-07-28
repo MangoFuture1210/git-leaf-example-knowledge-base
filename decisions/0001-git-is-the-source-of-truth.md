@@ -8,14 +8,14 @@ date: 2026-03-02
 
 ## Decision
 
-The files in this repository are the authoritative knowledge base. Git Leaf is the human-friendly app
-used to read and maintain them; automation and AI agents work with the same files through Git.
+The files in this repository are the team's authoritative shared context. Git Leaf is the human
+interface used to read and maintain them; automation and AI agents work with the same files through Git.
 
 ## Why
 
 - The content remains portable Markdown and MDX.
 - Changes have a reviewable history.
-- People and tools do not need separate copies of the knowledge.
+- People and tools do not need separate copies of the context.
 - The repository can be opened with other editors if needed.
 
 ## Consequences

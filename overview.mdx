@@ -5,8 +5,8 @@ status: active
 
 # Garden overview
 
-This page uses Git Leaf’s restricted MDX-lite components. The content remains plain text in Git and does
-not execute arbitrary JSX or scripts.
+This context document remains plain text in Git for agents, while Git Leaf gives people a structured
+view. It does not execute arbitrary JSX or scripts.
 
 <MetricGrid title="April snapshot">
 ```csv
@@ -21,7 +21,7 @@ Open questions,3,Questions awaiting a decision,watch
 <Timeline title="Spring plan">
 ```json
 [
-  {"date":"2026-03-02","title":"Knowledge base started","body":"The first durable decision was recorded.","status":"done"},
+  {"date":"2026-03-02","title":"Context repository started","body":"The first durable decision was recorded.","status":"done"},
   {"date":"2026-04-18","title":"Bed preparation","body":"Volunteers prepare soil and repair labels.","status":"active"},
   {"date":"2026-05-09","title":"Open-day review","body":"Owners confirm the route and rain plan."},
   {"date":"2026-05-16","title":"Spring open day","body":"Neighbors visit the garden."}
@@ -30,5 +30,5 @@ Open questions,3,Questions awaiting a decision,watch
 </Timeline>
 
 <DecisionBox title="Keep Git as the source of truth" status="accepted" owner="Garden volunteers" source="decisions/0001-git-is-the-source-of-truth.md">
-The repository is the knowledge base. Git Leaf helps people maintain it, and AI agents use the same files.
+The repository is the team's durable shared context. Git Leaf helps people maintain it, and AI agents use the same files directly.
 </DecisionBox>

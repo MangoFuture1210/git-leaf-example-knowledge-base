@@ -3,10 +3,10 @@ title: Welcome to Lighthouse Garden
 status: active
 ---
 
-# Welcome to Lighthouse Garden
+# Lighthouse Garden project context
 
-Lighthouse Garden is a fictional shared garden beside a neighborhood library. This knowledge base helps
-volunteers remember what was decided, what needs attention, and how recurring work is done.
+Lighthouse Garden is a fictional shared garden beside a neighborhood library. This document gives
+volunteers and AI agents the stable context they need before changing a plan, decision, or playbook.
 
 ## Shared goals
 
@@ -23,5 +23,6 @@ volunteers remember what was decided, what needs attention, and how recurring wo
 
 ## How to contribute
 
-Open the relevant page, make the smallest useful edit, and describe why it changed when syncing. If a
-question affects everyone, record the resulting decision under `decisions/`.
+People can open the relevant page in Git Leaf. AI agents should start from `AGENTS.md`. In either case,
+make the smallest useful edit and keep the result understandable to a new volunteer. If a question
+affects everyone, record the resulting decision under `decisions/`.
