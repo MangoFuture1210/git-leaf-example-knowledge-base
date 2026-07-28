@@ -33,7 +33,7 @@ Git Leaf 是本地 Git 仓库面向人的界面。人可以在 Git Leaf 中阅�
 | Demo | 可以体验什么 |
 | --- | --- |
 | [Markdown 与 Live](demos/markdown-live.md) | Preview、目录、Source、Live、Frontmatter、链接、列表和任务 |
-| [Live 表格编辑](demos/live-table-editing.md) | 单元格局部源码、矩形选区、文字颜色与列移动 |
+| [Live 表格编辑](demos/live-table-editing.md) | 单元格编辑、矩形选区格式、文字高亮、列对齐与列移动 |
 | [图片编辑](demos/image-editing.md) | Markdown 图片与 Live 图片工具栏 |
 | [Agent Context 与 Sync](demos/agent-context-and-sync.md) | 带来源的行选择、小范围修改与未发布改动检查 |
 | [MDX-lite 组件](demos/mdx-lite-components.mdx) | DataTable、Timeline、Chart、DecisionBox、MetricGrid 与 FlowDiagram |

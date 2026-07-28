@@ -5,7 +5,7 @@ status: maintained
 canonical: false
 source_repository: MangoFuture1210/git-leaf
 source_path: docs/user-guide.zh-CN.md
-source_revision: 2e5682f
+source_revision: c8e0eab
 last_updated: 2026-07-28
 ai_snippet: "[使用指南] 在一个公开仓库中体验 Git Leaf 阅读、编辑、MDX-lite、Agent Context、Sync 与链接"
 ---
@@ -56,10 +56,13 @@ Agent 写入的内容时，使用 Source。
 
 - 单击单元格，只编辑这个单元格的源码；即使仍在编辑，也可以从编辑框拖入相邻单元格扩大选区；
 - 横向、纵向或斜向拖动，选择起点与终点围成的矩形；
-- 使用固定在表格上方的文字颜色工具栏设置或清除颜色，通过关闭按钮或 Esc 关闭；
+- 使用固定在表格上方的格式工具栏设置粗体、斜体、删除线、前景色或文字后方的高亮色；
+- 对齐选区涉及的整列；清除文字格式时保留列对齐；
+- 两个固定色板只在需要时展开，工具栏可通过关闭按钮或 Esc 关闭；
 - 在同一列纵向选中至少两个单元格后，使用列拖动把手移动整列。
 
-Preview 始终只读。保存后的内容仍然是原生管道表格与受控的内联颜色 `span`，可以继续在 Obsidian 中打开。
+Preview 始终只读。保存后的内容仍然是原生管道表格、标准 Markdown、分隔行对齐与受控内联样式，可以继续
+在 Obsidian 中打开。
 
 完整场景见 [Live 表格编辑](../demos/live-table-editing.md)。
 

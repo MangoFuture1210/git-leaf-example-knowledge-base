@@ -36,7 +36,7 @@ If Git Leaf is already installed, use
 | Demo | What to try |
 | --- | --- |
 | [Markdown and Live](demos/markdown-live.md) | Preview, outline, Source, Live, frontmatter, links, lists, and tasks |
-| [Live table editing](demos/live-table-editing.md) | Cell-local source editing, rectangular selection, text color, and column movement |
+| [Live table editing](demos/live-table-editing.md) | Cell editing, rectangular formatting, text highlight, column alignment, and movement |
 | [Image editing](demos/image-editing.md) | Markdown images and the Live image toolbar |
 | [Agent Context and Sync](demos/agent-context-and-sync.md) | Source-backed line selection, a focused edit, and unpublished-change inspection |
 | [MDX-lite components](demos/mdx-lite-components.mdx) | DataTable, Timeline, Chart, DecisionBox, MetricGrid, and FlowDiagram |
