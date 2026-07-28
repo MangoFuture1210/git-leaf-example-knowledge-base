@@ -1,11 +1,12 @@
-# Lighthouse Garden 团队上下文仓库
+# Git Leaf 使用指南 Demo
 
 [English](README.md) | 简体中文
 
-这是一个完全虚构的小型社区花园团队的共享上下文仓库。其中保存共同目标、当前计划、决定和可复用的操作手册，
-让志愿者和 AI Agent 使用同一份信息；Git 负责保存文件及其历史。
+这是 [Git Leaf](https://github.com/MangoFuture1210/git-leaf) 使用指南的公开、可操作配套仓库。仓库里的
+文字直接介绍 Git Leaf，因此当这些页面出现在产品截图、上手演示或人工验收中时，画面里的内容本身也有意义。
 
-这里没有任何私密或真实运营资料。所有姓名、活动、日期和数字都是示例，并以 CC0 发布。
+Git Leaf 是本地 Git 仓库面向人的界面。人可以在 Git Leaf 中阅读、检查和做小范围修改；Agent 与开发者
+仍然直接使用同一组 Git 文件和自己熟悉的工具。
 
 ## 在 Git Leaf 中体验
 
@@ -21,25 +22,31 @@
 如果已经安装 Git Leaf，也可以直接
 [在 Git Leaf 中打开](https://gitleaf.mangofuture.com/open?repo=mangofuture1210%2Fgit-leaf-example-knowledge-base&path=README.zh-CN.md)。
 
-## 一个仓库，多种使用方式
+## 从使用指南开始
 
-- **普通团队成员**可以在 Git Leaf 中打开仓库，从[项目上下文](context/project-context.md)开始阅读。
-- **AI Agent** 先读取 [AGENTS.md](AGENTS.md)，再按其中的路径找到相关上下文。
-- **开发者和维护者**可以继续使用熟悉的 Git 和编辑器工具。
+- [Git Leaf 使用指南 Demo](guide/user-guide.zh-CN.md)：一条简洁的产品体验路线，链接会带你进入对应的
+  可操作示例。
+- [English user guide demo](guide/user-guide.md)：英文版本。
 
-所有人使用同一组普通文件；Git Leaf 是面向人的界面，不会再复制一套内容。
+## 主要功能 Demo
 
-## 快速浏览
+| Demo | 可以体验什么 |
+| --- | --- |
+| [Markdown 与 Live](demos/markdown-live.md) | Preview、目录、Source、Live、Frontmatter、链接、列表和任务 |
+| [Live 表格编辑](demos/live-table-editing.md) | 单元格局部源码、矩形选区、文字颜色与列移动 |
+| [图片编辑](demos/image-editing.md) | Markdown 图片与 Live 图片工具栏 |
+| [Agent Context 与 Sync](demos/agent-context-and-sync.md) | 带来源的行选择、小范围修改与未发布改动检查 |
+| [MDX-lite 组件](demos/mdx-lite-components.mdx) | DataTable、Timeline、Chart、DecisionBox、MetricGrid 与 FlowDiagram |
 
-- [项目上下文与共同目标](context/project-context.md)：团队的内容入口。
-- [每周花园例行事项](playbooks/weekly-garden-routine.md)：可复用的操作手册。
-- [春季开放日](projects/spring-open-day.md)：带负责人和状态的小项目。
-- [为什么以 Git 为事实源](decisions/0001-git-is-the-source-of-truth.md)：一项长期决定。
-- [花园概览](overview.mdx)：包含时间线和指标的结构化摘要。
+## 维护方式
 
-可以先让外部 Agent 读取 `AGENTS.md`，更新春季开放日计划中的一个待定问题。然后回到 Git Leaf，在
-Preview 中打开改过的文档，通过 **Sync** 检查变化，再选择几行准确内容加入 **Agent Context**；如果只需
-小幅修正，也可以直接在 Live 中完成后再发布。
+产品事实和正式使用文档仍以 Git Leaf 源码仓库为准。这里的改写页面会记录上游来源与版本；稳定的用户可见
+功能、操作流程或截图场景变化时，应同步检查此仓库。私密资料、可执行的任意 MDX，以及只用于回归测试的边界
+样例不会放进公开 Demo。
 
-仓库是团队持久的共享上下文和事实源，知识文档是其中一部分；Git Leaf 是让人以熟悉方式阅读和维护它的桌面
-App。
+除明确标记的 MDX-lite Demo 外，其余示例保持与 Obsidian，以及支持普通 Markdown、GFM 表格和安全内联
+HTML 的工具兼容。
+
+## 许可
+
+本仓库与 Git Leaf 一样，采用 [Apache License 2.0](LICENSE)。

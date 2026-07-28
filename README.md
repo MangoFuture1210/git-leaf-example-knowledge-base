@@ -1,13 +1,15 @@
-# Lighthouse Garden shared context repository
+# Git Leaf User Guide Demo
 
 English | [简体中文](README.zh-CN.md)
 
-Welcome to the shared context repository for a small, completely fictional community-garden team. It
-keeps the goals, current plans, decisions, and reusable playbooks that help volunteers and AI agents
-work from the same information. Git preserves the files and their history.
+This is the public, runnable companion to the
+[Git Leaf](https://github.com/MangoFuture1210/git-leaf) user guide. The repository content is about Git
+Leaf itself, so the same pages remain meaningful when they appear in product screenshots, onboarding
+walkthroughs, or manual acceptance checks.
 
-Nothing here is private or operational. All names, events, dates, and numbers are examples released
-under CC0.
+Git Leaf is the human interface over an ordinary local Git repository. People read, inspect, and make
+focused edits in Git Leaf; agents and developers work with the same files through Git and their usual
+tools.
 
 ## Try it in Git Leaf
 
@@ -23,36 +25,32 @@ under CC0.
 If Git Leaf is already installed, use
 [Open in Git Leaf](https://gitleaf.mangofuture.com/open?repo=mangofuture1210%2Fgit-leaf-example-knowledge-base&path=README.md).
 
-## One repository, several ways to use it
+## Start with the guide
 
-- **People** can open the repository in Git Leaf and start with
-  [project context](context/project-context.md).
-- **AI agents** can read [AGENTS.md](AGENTS.md) first, then follow its routes to the relevant context.
-- **Developers and maintainers** can use their normal Git and editor tools.
+- [Git Leaf user guide demo](guide/user-guide.md) — a concise product tour whose links open the
+  matching runnable examples.
+- [简体中文使用指南 Demo](guide/user-guide.zh-CN.md) — the same tour in Simplified Chinese.
 
-Everyone works with the same ordinary files; Git Leaf is the human interface, not a second copy of the
-content.
+## Main feature demos
 
-## A short tour
+| Demo | What to try |
+| --- | --- |
+| [Markdown and Live](demos/markdown-live.md) | Preview, outline, Source, Live, frontmatter, links, lists, and tasks |
+| [Live table editing](demos/live-table-editing.md) | Cell-local source editing, rectangular selection, text color, and column movement |
+| [Image editing](demos/image-editing.md) | Markdown images and the Live image toolbar |
+| [Agent Context and Sync](demos/agent-context-and-sync.md) | Source-backed line selection, a focused edit, and unpublished-change inspection |
+| [MDX-lite components](demos/mdx-lite-components.mdx) | DataTable, Timeline, Chart, DecisionBox, MetricGrid, and FlowDiagram |
 
-- [Project context and shared goals](context/project-context.md) — the entry point for the team.
-- [Weekly garden routine](playbooks/weekly-garden-routine.md) — a reusable playbook.
-- [Spring open day](projects/spring-open-day.md) — one project with owners and status.
-- [Why Git is the source of truth](decisions/0001-git-is-the-source-of-truth.md) — a durable decision.
-- [Garden overview](overview.mdx) — a structured summary with a timeline and metrics.
+## How this repository is maintained
 
-Try asking an external agent to read `AGENTS.md` and update one open question in the spring open-day
-plan. Then return to Git Leaf, open the changed document in Preview, inspect it in **Sync**, and select a
-few exact lines for **Agent Context**. You can make a focused correction in Live before publishing the
-result.
+The canonical product documentation remains in the Git Leaf source repository. This demo records the
+upstream source revision on adapted pages and is reviewed whenever a stable user-visible workflow or
+screenshot scenario changes. It intentionally excludes private data, arbitrary executable MDX, and
+regression-only edge cases.
 
-## What this example intentionally avoids
+Except for the explicitly labeled MDX-lite demo, the examples stay compatible with Obsidian and other
+tools that support ordinary Markdown, GFM tables, and safe inline HTML.
 
-- no company-specific process or professional jargon;
-- no Git credentials, automation secrets, or private data;
-- no arbitrary JSX or executable document scripts;
-- no assumption that Git Leaf hosts the content.
+## License
 
-The repository is the team's durable shared context and source of truth. Its knowledge documents are
-one part of that context. Git Leaf is the desktop app that gives people a familiar way to read and
-maintain it.
+This repository is licensed under the [Apache License 2.0](LICENSE), matching Git Leaf.

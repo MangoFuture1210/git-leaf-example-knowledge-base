@@ -1,18 +1,35 @@
-# AGENTS.md - Lighthouse Garden
+# AGENTS.md - Git Leaf User Guide Demo
 
-This is a completely fictional shared context repository for a small community-garden team. People use
-Git Leaf to read and maintain the documents; AI agents and developers work with the same files directly.
+This public repository is the runnable companion to Git Leaf's user guide. People open it in Git Leaf
+to learn the product and exercise its main document interactions; agents and maintainers edit the same
+ordinary Git files directly.
 
 ## Read before changing anything
 
-1. Start with `context/project-context.md`.
-2. Read the relevant file under `projects/`, `decisions/`, or `playbooks/`.
-3. Use `overview.mdx` only when the structured summary also needs to change.
+1. Start with `README.md` and its Simplified Chinese counterpart.
+2. Read `guide/user-guide.md` for the guided product tour.
+3. Open the relevant file under `demos/` before changing a feature example.
+4. Verify current product facts in the upstream
+   [`MangoFuture1210/git-leaf`](https://github.com/MangoFuture1210/git-leaf) repository.
 
-## Change rules
+## Authority and synchronization
 
-- Make the smallest useful change and keep the language understandable to a first-time volunteer.
-- Preserve frontmatter and relative links.
-- Put lasting choices in `decisions/`; put repeatable procedures in `playbooks/`.
-- Do not add real personal data, credentials, or operational secrets. Every person, date, and number in
-  this repository must remain fictional.
+- The Git Leaf repository owns product behavior, architecture, release policy, and the canonical user
+  guide. This repository is a public demo, not a second source of product truth.
+- When a stable user-visible Git Leaf capability, workflow, or screenshot scenario changes, review the
+  matching page here in the same maintenance cycle.
+- Copied or adapted material must record its upstream source path and revision in frontmatter.
+- Keep this repository useful on its own, but link to upstream technical documentation instead of
+  duplicating architecture or release policy.
+
+## Demo rules
+
+- Every visible example must be about Git Leaf, its repository workflow, or its documentation. Do not
+  add an unrelated fictional story merely to fill a screenshot.
+- Cover stable primary capabilities. Keep security probes, unsupported syntax, stress fixtures, and
+  regression-only edge cases in the Git Leaf product repository.
+- Markdown examples should remain portable to Obsidian and other CommonMark or GFM tools. MDX-lite
+  examples are the explicit Git Leaf extension.
+- Preserve frontmatter, relative links, accessible image alt text, and source-readable sample data.
+- Do not add personal data, credentials, private operational material, or claims not verified against
+  the current upstream repository.
