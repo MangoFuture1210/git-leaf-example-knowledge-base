@@ -5,7 +5,7 @@ status: maintained
 canonical: false
 source_repository: MangoFuture1210/git-leaf
 source_path: docs/user-guide.md
-source_revision: 58fe9b4
+source_revision: 2e5682f
 last_updated: 2026-07-28
 ai_snippet: "[Guide] Try Git Leaf reading, editing, MDX-lite, Agent Context, Sync, and links in one public repository"
 ---
@@ -58,10 +58,13 @@ document formats.
 
 In Live, a native pipe table remains rendered:
 
-- click a cell to edit only that cell's source;
+- click a cell to edit only that cell's source, then drag from the active editor into a neighboring cell
+  to extend the selection;
 - drag horizontally, vertically, or diagonally to select the rectangle between two cells;
-- use the floating palette to color every selected cell;
-- select a complete column to reveal the handle used to move that column.
+- use the text-color toolbar fixed above the table to set or clear color, then close it with its close
+  button or Escape;
+- select two or more cells vertically in one column to reveal the column drag handle and move the whole
+  column.
 
 Preview stays read-only. The saved source remains a native pipe table with a controlled inline color
 span that can still be opened in Obsidian.

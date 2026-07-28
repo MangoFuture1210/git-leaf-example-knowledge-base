@@ -5,7 +5,7 @@ status: maintained
 canonical: false
 source_repository: MangoFuture1210/git-leaf
 source_path: docs/user-guide.zh-CN.md
-source_revision: 58fe9b4
+source_revision: 2e5682f
 last_updated: 2026-07-28
 ai_snippet: "[使用指南] 在一个公开仓库中体验 Git Leaf 阅读、编辑、MDX-lite、Agent Context、Sync 与链接"
 ---
@@ -54,10 +54,10 @@ Agent 写入的内容时，使用 Source。
 
 在 Live 中，原生管道表格会保持渲染状态：
 
-- 单击单元格，只编辑这个单元格的源码；
+- 单击单元格，只编辑这个单元格的源码；即使仍在编辑，也可以从编辑框拖入相邻单元格扩大选区；
 - 横向、纵向或斜向拖动，选择起点与终点围成的矩形；
-- 使用浮动色板给整个选区改色；
-- 完整选中一列后，通过顶部把手移动这一列。
+- 使用固定在表格上方的文字颜色工具栏设置或清除颜色，通过关闭按钮或 Esc 关闭；
+- 在同一列纵向选中至少两个单元格后，使用列拖动把手移动整列。
 
 Preview 始终只读。保存后的内容仍然是原生管道表格与受控的内联颜色 `span`，可以继续在 Obsidian 中打开。
 

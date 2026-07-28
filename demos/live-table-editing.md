@@ -4,7 +4,7 @@ type: feature-demo
 status: maintained
 source_repository: MangoFuture1210/git-leaf
 source_path: docs/user-guide.md
-source_revision: 58fe9b4
+source_revision: 2e5682f
 last_updated: 2026-07-28
 ai_snippet: "[Demo] Native Markdown table cell editing rectangular selection text color and column reorder in Live"
 ---
@@ -17,8 +17,9 @@ table written to disk.
 ## 1. Select and color a rectangular range
 
 Drag horizontally, vertically, or diagonally across adjacent cells. Git Leaf selects the complete
-rectangle bounded by the first and last cell. Choose a color from the floating toolbar to apply it to
-every selected cell.
+rectangle bounded by the first and last cell. The toolbar stays above the table instead of following
+the selection. Use it to set or clear color across the range, then close it with the close button or
+Escape.
 
 | Surface | Primary purpose | Portability | Recommended mode |
 | --- | --- | --- | --- |
@@ -30,19 +31,21 @@ every selected cell.
 ## 2. Edit one cell without exposing the whole table
 
 Click the `Focused edit` cell. Only that cell shows its raw Markdown source; the rest of the table stays
-rendered.
+rendered. While the editor is still active, start dragging inside it and cross into a neighboring cell.
+The editor commits and the gesture becomes a rectangular table selection.
 
 | Interaction | Expected result | Scope |
 | --- | --- | --- |
 | Click one cell | Focused edit | Current cell |
-| Drag across cells | Rectangular selection | Bounded range |
-| Choose a color | Controlled inline span | Entire selected cells |
-| Press Escape | Clear or cancel | Current interaction |
+| Drag from the active cell | Rectangular selection | Bounded range |
+| Choose or clear a color | Controlled inline span | Entire selected cells |
+| Close the toolbar or press Escape | Clear the selection | Current interaction |
 
-## 3. Move a complete column
+## 3. Move a column from a vertical range
 
-Select a column from its header through the last body cell. A small handle appears above the column.
-Drag the handle left or right; the header, alignment separator, and every body cell move together.
+Select any vertical range of at least two cells within one column. The column drag handle appears
+without requiring the complete column to be selected. Drag it left or right; the header, alignment
+separator, and every body cell move together.
 
 | Field | Source owner | Alignment | Status |
 | :--- | :--- | ---: | :---: |
