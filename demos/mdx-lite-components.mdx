@@ -8,7 +8,7 @@ source: git-leaf
 canonical: false
 source_repository: MangoFuture1210/git-leaf
 source_path: docs/mdx-lite-components-demo.mdx
-source_revision: 82c41ae
+source_revision: 5ec7a29
 ai_snippet: "[Demo] Git Leaf MDX-lite component preview | DataTable Timeline Chart DecisionBox MetricGrid FlowDiagram | sample data is not a source of truth"
 ---
 
@@ -200,6 +200,21 @@ script.
 ```
 </DataTable>
 
+### Weekly source dataset
+
+This source contains complete weekly totals rather than daily rows. Its manifest declares
+`sourceGranularity: "week"`, so the rendered component exposes only Week. Git Leaf does not invent Day,
+Month, or Quarter values from these rows.
+
+<Chart
+  title="Weekly-only company revenue and expense"
+  dataset="./data/company-weekly.dataset.json"
+  type="line"
+  x="period"
+  series="revenue,expense"
+  unit="CNY"
+/>
+
 ## 4. DecisionBox
 
 <DecisionBox
@@ -265,7 +280,8 @@ Desktop shell,Electron,,Open any local Git repository,good
 ## Acceptance
 
 - All six components render without an MDX component error.
-- Both external views expose day, week, month, and quarter controls from one full daily CSV.
+- Both daily-source views expose day, week, month, and quarter controls from one full daily CSV.
+- The weekly-source chart exposes only Week.
 - Quarter view uses a natural label such as `2026-Q1` and manifest-defined rollups.
 - Chart hover shows the combined tooltip for one x value.
 - FlowDiagram renders as static SVG.

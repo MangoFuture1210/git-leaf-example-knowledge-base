@@ -5,7 +5,7 @@ status: maintained
 canonical: false
 source_repository: MangoFuture1210/git-leaf
 source_path: docs/user-guide.zh-CN.md
-source_revision: 871fb7a
+source_revision: 5ec7a29
 last_updated: 2026-08-01
 ai_snippet: "[使用指南] 在一个公开仓库中体验 Git Leaf 阅读、编辑、MDX-lite、Agent Context、Sync 与链接"
 ---
@@ -77,14 +77,15 @@ Preview 始终只读。保存后的内容仍然是原生管道表格、标准 Ma
 
 Git Leaf MDX-lite 只接受有限的组件集合，组件数据仍然是普通 CSV、TSV、JSON 或 Markdown 文本。`Chart`
 和 `DataTable` 还可以引用仓库内的 `.dataset.json` 数据契约，以及旁边长期维护的全量 CSV 或 JSON 数据文件。
-报表指定包含首尾日期的区间，读者可以在不改动源数据的情况下切换日、周、月和自然季度视图。
+报表指定包含首尾日期的区间，读者只能选择源数据粒度可靠支持的视图：日数据支持日、周、月和自然季度，
+周数据只支持周；切换视图不会改动源数据。
 
 Git Leaf 不会执行任意 JSX、import、脚本或事件处理器。数据集聚合只使用清单里明确声明的字段类型和汇总规则。
 
 打开 [MDX-lite 组件](../demos/mdx-lite-components.mdx)，在 Preview、Live 与 Source 中检查 DataTable、
 Timeline、Chart、DecisionBox、MetricGrid 和 FlowDiagram；在外部数据集一节，把同一份日数据切换到四种
 时间粒度。然后打开独立的 [外部数据集报表](../demos/external-dataset-report.mdx)，检查三文件契约、日期区间、
-带类型的筛选条件和预期季度结果。
+带类型的筛选条件、预期季度结果，以及周数据源唯一可靠的周视图。
 
 ## 8. 把准确上下文交给 Agent
 

@@ -8,7 +8,7 @@ source: git-leaf
 canonical: false
 source_repository: MangoFuture1210/git-leaf
 source_path: docs/mdx-lite-guide.md
-source_revision: 82c41ae
+source_revision: 5ec7a29
 ai_snippet: "[Demo] External CSV dataset report | typed sidecar manifest | date range | day week month quarter | Chart and DataTable"
 ---
 
@@ -82,10 +82,26 @@ before aggregation. This example selects company `001`, then starts in the weekl
 orders to summed visits, rather than averaging daily percentages. These choices come from the manifest;
 the display component never guesses a rollup.
 
+## Weekly source keeps only the weekly view
+
+The independent [weekly manifest](data/company-weekly.dataset.json) declares
+`sourceGranularity: "week"`. A calendar week can cross month and quarter boundaries, so Git Leaf shows
+only Week and does not assign weekly totals to a natural month or quarter.
+
+<Chart
+  title="Weekly-only company revenue and expense"
+  dataset="./data/company-weekly.dataset.json"
+  type="line"
+  x="period"
+  series="revenue,expense"
+  unit="CNY"
+/>
+
 ## What to inspect
 
-- In Preview, switch both reports through day, week, month, and quarter.
-- In Live, click the same controls and confirm the components stay rendered instead of becoming source.
+- In Preview, switch the two daily-source reports through day, week, month, and quarter.
+- Confirm that the weekly-source chart exposes only Week in Preview and Live.
+- In Live, click the available controls and confirm the components stay rendered instead of becoming source.
 - In Source, inspect the short MDX view definition, then open the manifest and CSV as independent files.
 - Change only `from` and `to` in a copy of this page to create another bounded report over the same full
   dataset.
@@ -95,7 +111,8 @@ network URLs, arbitrary code, joins, and general SQL are not supported.
 
 ## Acceptance
 
-- Both components render without an MDX component error.
-- Every component exposes `Day`, `Week`, `Month`, and `Quarter` controls.
+- All three components render without an MDX component error.
+- The daily-source components expose `Day`, `Week`, `Month`, and `Quarter` controls.
+- The weekly-source component exposes only `Week`.
 - Quarter view labels the natural quarter as `2026-Q1`.
 - The source CSV and its schema manifest remain separate, ordinary repository files.
