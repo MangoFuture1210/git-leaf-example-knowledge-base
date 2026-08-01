@@ -39,7 +39,7 @@ If Git Leaf is already installed, use
 | [Live table editing](demos/live-table-editing.md) | Cell editing, rectangular formatting, text highlight, column alignment, and movement |
 | [Image editing](demos/image-editing.md) | Markdown images and the Live image toolbar |
 | [Agent Context and Sync](demos/agent-context-and-sync.md) | Source-backed line selection, a focused edit, and unpublished-change inspection |
-| [MDX-lite components](demos/mdx-lite-components.mdx) | Six safe components plus source-granularity-aware external reports |
+| [MDX-lite components](demos/mdx-lite-components.mdx) | Six safe component toolbars plus source-granularity-aware external reports |
 | [External dataset report](demos/external-dataset-report.mdx) | Daily and weekly sources, typed manifests, bounded ranges, filters, and safe time views |
 
 ## How this repository is maintained

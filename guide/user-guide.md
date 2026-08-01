@@ -5,8 +5,8 @@ status: maintained
 canonical: false
 source_repository: MangoFuture1210/git-leaf
 source_path: docs/user-guide.md
-source_revision: 5ec7a29
-last_updated: 2026-08-01
+source_revision: 35c6227
+last_updated: 2026-08-02
 ai_snippet: "[Guide] Try Git Leaf reading, editing, MDX-lite, Agent Context, Sync, and links in one public repository"
 ---
 
@@ -91,6 +91,14 @@ Daily sources offer day, week, month, and natural-quarter views; weekly sources 
 
 Git Leaf does not execute arbitrary JSX, imports, scripts, or event handlers. Dataset aggregation uses
 only the typed fields and explicit rollups declared by the manifest.
+
+In Live, click a rendered component to keep it visual and open one compact toolbar. `DataTable` exposes
+its common table settings, `Chart` exposes type and value labels, and `DecisionBox` exposes status; each
+component also has one direct action for its body data. Use `</>` only when the complete component source
+is needed. Close the toolbar with its close button, Escape, or by selecting another object.
+
+Dataset day, week, month, and quarter buttons remain reader controls inside the rendered component. They
+do not open the editing toolbar and never write MDX.
 
 Open [MDX-lite components](../demos/mdx-lite-components.mdx) to inspect DataTable, Timeline, Chart,
 DecisionBox, MetricGrid, and FlowDiagram in Preview, Live, and Source. In the external dataset section,
