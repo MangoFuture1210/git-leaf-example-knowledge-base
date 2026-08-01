@@ -3,12 +3,12 @@ title: MDX-lite component demo
 domain: tools
 type: demo
 owner: maintainer
-last_updated: 2026-07-28
+last_updated: 2026-08-01
 source: git-leaf
 canonical: false
 source_repository: MangoFuture1210/git-leaf
 source_path: docs/mdx-lite-components-demo.mdx
-source_revision: 58fe9b4
+source_revision: 871fb7a
 ai_snippet: "[Demo] Git Leaf MDX-lite component preview | DataTable Timeline Chart DecisionBox MetricGrid FlowDiagram | sample data is not a source of truth"
 ---
 
@@ -23,9 +23,9 @@ for syntax and boundaries.
 
 | Component | What this fixture checks |
 | --- | --- |
-| `DataTable` | Structured detail and wide-table behavior |
+| `DataTable` | Structured detail, wide-table behavior, and external datasets |
 | `Timeline` | Milestones, progress, and risk states |
-| `Chart` | Line, bar, grouped, stacked, and combo charts |
+| `Chart` | Line, bar, grouped, stacked, combo, and external time-series charts |
 | `DecisionBox` | Decision, rationale, tradeoffs, reconsideration |
 | `MetricGrid` | Small headline metric sets |
 | `FlowDiagram` | Main processes and agent handoffs |
@@ -118,6 +118,27 @@ month,volume,completionRate
 ```
 </Chart>
 
+### External daily dataset
+
+The CSV below is maintained independently as one full daily dataset. Its sidecar manifest defines field
+types, meanings, time semantics, and explicit rollups. The same `Chart` and `DataTable` components can
+select a date range and switch among day, week, month, and natural-quarter views.
+
+<Chart title="Daily company revenue and expense" dataset="./data/company-daily.dataset.json" type="line" x="period" series="revenue,expense" unit="CNY" revenueLabel="Revenue" expenseLabel="Expense" from="2026-01-01" to="2026-03-31" granularity="month" />
+
+The optional finite `query` block filters typed rows before aggregation; it is data, not an executable
+script.
+
+<DataTable title="Weekly company summary" dataset="./data/company-daily.dataset.json" columns="date,revenue,expense,cash,conversion_rate" from="2026-01-01" to="2026-03-31" granularity="week">
+```query
+{
+  "where": [
+    {"field": "company_id", "op": "eq", "value": "001"}
+  ]
+}
+```
+</DataTable>
+
 ## 4. DecisionBox
 
 <DecisionBox title="Keep Git as the knowledge source of truth" status="accepted" owner="maintainer" source="docs/architecture.md">
@@ -173,6 +194,8 @@ Desktop shell,Electron,,Open any local Git repository,good
 ## Acceptance
 
 - All six components render without an MDX component error.
+- Both external views expose day, week, month, and quarter controls from one full daily CSV.
+- Quarter view uses a natural label such as `2026-Q1` and manifest-defined rollups.
 - Chart hover shows the combined tooltip for one x value.
 - FlowDiagram renders as static SVG.
 - Syntax and new-component policy remain defined by the

@@ -5,8 +5,8 @@ status: maintained
 canonical: false
 source_repository: MangoFuture1210/git-leaf
 source_path: docs/user-guide.zh-CN.md
-source_revision: c8e0eab
-last_updated: 2026-07-28
+source_revision: 871fb7a
+last_updated: 2026-08-01
 ai_snippet: "[使用指南] 在一个公开仓库中体验 Git Leaf 阅读、编辑、MDX-lite、Agent Context、Sync 与链接"
 ---
 
@@ -75,11 +75,15 @@ Preview 始终只读。保存后的内容仍然是原生管道表格、标准 Ma
 
 ## 7. Agent 读数据，人看结构化视觉
 
-Git Leaf MDX-lite 只接受有限的组件集合，组件数据仍然是普通 CSV、TSV、JSON 或 Markdown 文本；它不会
-执行任意 JSX、import、脚本或事件处理器。
+Git Leaf MDX-lite 只接受有限的组件集合，组件数据仍然是普通 CSV、TSV、JSON 或 Markdown 文本。`Chart`
+和 `DataTable` 还可以引用仓库内的 `.dataset.json` 数据契约，以及旁边长期维护的全量 CSV 或 JSON 数据文件。
+报表指定包含首尾日期的区间，读者可以在不改动源数据的情况下切换日、周、月和自然季度视图。
 
-打开 [MDX-lite 组件](../demos/mdx-lite-components.mdx)，在 Preview 与 Source 中检查 DataTable、
-Timeline、Chart、DecisionBox、MetricGrid 和 FlowDiagram。
+Git Leaf 不会执行任意 JSX、import、脚本或事件处理器。数据集聚合只使用清单里明确声明的字段类型和汇总规则。
+
+打开 [MDX-lite 组件](../demos/mdx-lite-components.mdx)，在 Preview、Live 与 Source 中检查 DataTable、
+Timeline、Chart、DecisionBox、MetricGrid 和 FlowDiagram；在外部数据集一节，把同一份日数据切换到四种
+时间粒度。
 
 ## 8. 把准确上下文交给 Agent
 

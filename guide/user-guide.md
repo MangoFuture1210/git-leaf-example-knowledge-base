@@ -5,8 +5,8 @@ status: maintained
 canonical: false
 source_repository: MangoFuture1210/git-leaf
 source_path: docs/user-guide.md
-source_revision: c8e0eab
-last_updated: 2026-07-28
+source_revision: 871fb7a
+last_updated: 2026-08-01
 ai_snippet: "[Guide] Try Git Leaf reading, editing, MDX-lite, Agent Context, Sync, and links in one public repository"
 ---
 
@@ -84,10 +84,16 @@ Open [Image editing](../demos/image-editing.md), switch to Live, and select the 
 ## 7. Keep structured data readable to agents
 
 Git Leaf MDX-lite accepts a bounded component set whose data remains ordinary CSV, TSV, JSON, or
-Markdown text. It does not execute arbitrary JSX, imports, scripts, or event handlers.
+Markdown text. `Chart` and `DataTable` can also reference a repository-local `.dataset.json` contract
+beside a maintained full CSV or JSON data file. The report chooses an inclusive date range and readers
+can switch among day, week, month, and natural-quarter views without changing the source data.
+
+Git Leaf does not execute arbitrary JSX, imports, scripts, or event handlers. Dataset aggregation uses
+only the typed fields and explicit rollups declared by the manifest.
 
 Open [MDX-lite components](../demos/mdx-lite-components.mdx) to inspect DataTable, Timeline, Chart,
-DecisionBox, MetricGrid, and FlowDiagram in Preview and Source.
+DecisionBox, MetricGrid, and FlowDiagram in Preview, Live, and Source. In the external dataset section,
+switch the same daily source among the four time intervals.
 
 ## 8. Give exact context to an agent
 
