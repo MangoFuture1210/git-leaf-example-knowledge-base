@@ -83,7 +83,8 @@ Git Leaf 不会执行任意 JSX、import、脚本或事件处理器。数据集�
 
 打开 [MDX-lite 组件](../demos/mdx-lite-components.mdx)，在 Preview、Live 与 Source 中检查 DataTable、
 Timeline、Chart、DecisionBox、MetricGrid 和 FlowDiagram；在外部数据集一节，把同一份日数据切换到四种
-时间粒度。
+时间粒度。然后打开独立的 [外部数据集报表](../demos/external-dataset-report.mdx)，检查三文件契约、日期区间、
+带类型的筛选条件和预期季度结果。
 
 ## 8. 把准确上下文交给 Agent
 

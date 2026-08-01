@@ -1,0 +1,80 @@
+---
+title: External dataset report demo
+domain: tools
+type: demo
+owner: maintainer
+last_updated: 2026-08-01
+source: git-leaf
+canonical: false
+source_repository: MangoFuture1210/git-leaf
+source_path: docs/mdx-lite-guide.md
+source_revision: 871fb7a
+ai_snippet: "[Demo] External CSV dataset report | typed sidecar manifest | date range | day week month quarter | Chart and DataTable"
+---
+
+# External dataset report demo
+
+[Demo index](../README.md) · [All MDX-lite components](mdx-lite-components.mdx)
+
+This page demonstrates a long-lived company report whose complete daily source is maintained outside
+the MDX document. Open this file in Preview or Live and use the controls above each report to switch the
+same source among day, week, month, and natural-quarter views.
+
+## The three-file contract
+
+1. [The daily CSV](data/company-daily.csv) is the full source dataset and stays directly readable by
+   people, agents, spreadsheets, and other tools.
+2. [The dataset manifest](data/company-daily.dataset.json) defines field names, types, meanings, units,
+   the time field, primary key, and allowed rollup for every reported metric.
+3. This MDX file selects an inclusive date range and presentation. It does not copy or rewrite the
+   underlying rows.
+
+Standard CSV has no frontmatter. Keeping the contract in a neighboring `.dataset.json` file avoids
+inventing a nonstandard CSV header and lets CSV tools continue to read the data normally.
+
+## Revenue and expense trend
+
+This chart starts in the daily view. Its `from` and `to` attributes bound the x-axis data. Click the four
+interval controls; the button choice is transient UI state and does not edit this file.
+
+<Chart title="Daily company revenue and expense" dataset="./data/company-daily.dataset.json" type="line" x="period" series="revenue,expense" unit="CNY" revenueLabel="Revenue" expenseLabel="Expense" from="2026-01-01" to="2026-03-31" granularity="day" granularityOptions="day,week,month,quarter" />
+
+For this synthetic source, the natural-quarter view has one period, `2026-Q1`: revenue is `9690` and
+expense is `5940`. Both values use the manifest's explicit `sum` rule.
+
+## Filtered report table
+
+The optional fenced `query` block contains bounded JSON data, not JavaScript or SQL. Filtering happens
+before aggregation. This example selects company `001`, then starts in the weekly view.
+
+<DataTable title="Company performance summary" dataset="./data/company-daily.dataset.json" columns="date,revenue,expense,cash,conversion_rate" from="2026-01-01" to="2026-03-31" granularity="week" granularityOptions="day,week,month,quarter">
+```query
+{
+  "where": [
+    {"field": "company_id", "op": "eq", "value": "001"}
+  ]
+}
+```
+</DataTable>
+
+`cash` uses the last value in each period. `conversion_rate` is calculated as the ratio of summed
+orders to summed visits, rather than averaging daily percentages. These choices come from the manifest;
+the display component never guesses a rollup.
+
+## What to inspect
+
+- In Preview, switch both reports through day, week, month, and quarter.
+- In Live, click the same controls and confirm the components stay rendered instead of becoming source.
+- In Source, inspect the short MDX view definition, then open the manifest and CSV as independent files.
+- Change only `from` and `to` in a copy of this page to create another bounded report over the same full
+  dataset.
+
+The query runs locally inside Git Leaf. Dataset references must stay inside the current repository;
+network URLs, arbitrary code, joins, and general SQL are not supported.
+
+## Acceptance
+
+- Both components render without an MDX component error.
+- Every component exposes `Day`, `Week`, `Month`, and `Quarter` controls.
+- Quarter view labels the natural quarter as `2026-Q1`.
+- The source CSV and its schema manifest remain separate, ordinary repository files.

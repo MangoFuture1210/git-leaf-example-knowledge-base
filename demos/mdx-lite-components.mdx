@@ -124,6 +124,9 @@ The CSV below is maintained independently as one full daily dataset. Its sidecar
 types, meanings, time semantics, and explicit rollups. The same `Chart` and `DataTable` components can
 select a date range and switch among day, week, month, and natural-quarter views.
 
+See the dedicated [external dataset report demo](external-dataset-report.mdx) for the complete
+three-file walkthrough and acceptance steps.
+
 <Chart title="Daily company revenue and expense" dataset="./data/company-daily.dataset.json" type="line" x="period" series="revenue,expense" unit="CNY" revenueLabel="Revenue" expenseLabel="Expense" from="2026-01-01" to="2026-03-31" granularity="month" />
 
 The optional finite `query` block filters typed rows before aggregation; it is data, not an executable

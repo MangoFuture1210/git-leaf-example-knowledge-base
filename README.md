@@ -40,6 +40,7 @@ If Git Leaf is already installed, use
 | [Image editing](demos/image-editing.md) | Markdown images and the Live image toolbar |
 | [Agent Context and Sync](demos/agent-context-and-sync.md) | Source-backed line selection, a focused edit, and unpublished-change inspection |
 | [MDX-lite components](demos/mdx-lite-components.mdx) | Six safe components plus external CSV/JSON reports with day, week, month, and quarter views |
+| [External dataset report](demos/external-dataset-report.mdx) | A full daily CSV, typed sidecar manifest, date range, filters, and four report intervals |
 
 ## How this repository is maintained
 

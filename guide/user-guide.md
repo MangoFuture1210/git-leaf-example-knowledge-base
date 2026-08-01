@@ -93,7 +93,9 @@ only the typed fields and explicit rollups declared by the manifest.
 
 Open [MDX-lite components](../demos/mdx-lite-components.mdx) to inspect DataTable, Timeline, Chart,
 DecisionBox, MetricGrid, and FlowDiagram in Preview, Live, and Source. In the external dataset section,
-switch the same daily source among the four time intervals.
+switch the same daily source among the four time intervals. Then open the dedicated
+[external dataset report](../demos/external-dataset-report.mdx) to inspect the three-file contract,
+date range, typed filter, and expected quarterly result.
 
 ## 8. Give exact context to an agent
 
