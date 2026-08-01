@@ -8,7 +8,7 @@ source: git-leaf
 canonical: false
 source_repository: MangoFuture1210/git-leaf
 source_path: docs/mdx-lite-components-demo.mdx
-source_revision: 5ec7a29
+source_revision: 974221f
 ai_snippet: "[Demo] Git Leaf MDX-lite component preview | DataTable Timeline Chart DecisionBox MetricGrid FlowDiagram | sample data is not a source of truth"
 ---
 
@@ -91,7 +91,8 @@ Statuses provide visual cues; prose remains authoritative.
 
 ## 3. Chart
 
-Hovering a chart combines all series for one x value in a shared tooltip.
+Moving anywhere inside a chart's plot selects the nearest x value: all visible marks in that column are
+emphasized, a vertical guide identifies the column, and one shared tooltip combines its series.
 
 <Chart
   title="Knowledge workbench usage"
@@ -283,7 +284,7 @@ Desktop shell,Electron,,Open any local Git repository,good
 - Both daily-source views expose day, week, month, and quarter controls from one full daily CSV.
 - The weekly-source chart exposes only Week.
 - Quarter view uses a natural label such as `2026-Q1` and manifest-defined rollups.
-- Chart hover shows the combined tooltip for one x value.
+- Chart hover selects the nearest x value, emphasizes its visible marks, and shows its guide and combined tooltip.
 - FlowDiagram renders as static SVG.
 - Syntax and new-component policy remain defined by the
   [MDX-lite renderer reference](https://github.com/MangoFuture1210/git-leaf/blob/main/docs/mdx-lite-guide.md).
