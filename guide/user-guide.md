@@ -5,7 +5,7 @@ status: maintained
 canonical: false
 source_repository: MangoFuture1210/git-leaf
 source_path: docs/user-guide.md
-source_revision: 35c6227
+source_revision: b89ba34
 last_updated: 2026-08-02
 ai_snippet: "[Guide] Try Git Leaf reading, editing, MDX-lite, Agent Context, Sync, and links in one public repository"
 ---
@@ -93,9 +93,9 @@ Git Leaf does not execute arbitrary JSX, imports, scripts, or event handlers. Da
 only the typed fields and explicit rollups declared by the manifest.
 
 In Live, click a rendered component to keep it visual and open one compact toolbar. `DataTable` exposes
-its common table settings, `Chart` exposes type and value labels, and `DecisionBox` exposes status; each
-component also has one direct action for its body data. Use `</>` only when the complete component source
-is needed. Close the toolbar with its close button, Escape, or by selecting another object.
+its common table settings, `Chart` exposes type and value labels, and `DecisionBox` exposes status. Every
+component uses one `</>` entry for its source, whether its data is inline or external. Close the toolbar
+with its close button, Escape, or by selecting another object.
 
 Dataset day, week, month, and quarter buttons remain reader controls inside the rendered component. They
 do not open the editing toolbar and never write MDX.

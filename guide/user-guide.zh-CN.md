@@ -5,7 +5,7 @@ status: maintained
 canonical: false
 source_repository: MangoFuture1210/git-leaf
 source_path: docs/user-guide.zh-CN.md
-source_revision: 35c6227
+source_revision: b89ba34
 last_updated: 2026-08-02
 ai_snippet: "[使用指南] 在一个公开仓库中体验 Git Leaf 阅读、编辑、MDX-lite、Agent Context、Sync 与链接"
 ---
@@ -83,8 +83,8 @@ Git Leaf MDX-lite 只接受有限的组件集合，组件数据仍然是普通 C
 Git Leaf 不会执行任意 JSX、import、脚本或事件处理器。数据集聚合只使用清单里明确声明的字段类型和汇总规则。
 
 在 Live 中，单击已渲染的组件会保持视觉呈现，并打开一个紧凑工具栏。`DataTable` 提供常用表格设置，
-`Chart` 提供类型和数值标签，`DecisionBox` 提供状态；每个组件还只有一个直接进入正文数据的操作。只有需要
-完整组件源码时才使用 `</>`。关闭按钮、Esc 或选择其他对象都能关闭工具栏。
+`Chart` 提供类型和数值标签，`DecisionBox` 提供状态。无论数据在文档内还是来自外部，每个组件都只通过
+一个 `</>` 入口进入源码。关闭按钮、Esc 或选择其他对象都能关闭工具栏。
 
 数据集的日、周、月、季度按钮仍是组件内部的阅读控件。它们不会打开编辑工具栏，也不会写入 MDX。
 
