@@ -5,7 +5,7 @@ status: maintained
 canonical: false
 source_repository: MangoFuture1210/git-leaf
 source_path: docs/user-guide.md
-source_revision: a295678
+source_revision: 6af69ab
 last_updated: 2026-08-04
 ai_snippet: "[Guide] Try Git Leaf reading, editing, Mermaid, MDX-lite, Agent Context, Sync, and links in one public repository"
 ---
@@ -25,6 +25,13 @@ copy of its documents. The directory tree, Git history, and source files remain 
 other Git tool.
 
 Use this repository for the tour so every visible document describes the product you are using.
+
+When several repositories are open, use the repository button beside the current name or press
+`Command+O` on macOS and `Ctrl+O` on Windows. The centered panel can search the stable repository list;
+while it is open, `Command+1` through `Command+9` (`Ctrl+1` through `Ctrl+9` on Windows) select the
+numbered visible repositories, and `Command+0` or `Ctrl+0` opens another local repository. A row can be
+removed from Git Leaf without deleting its local files. The worktree selector remains a separate control
+beneath the repository identity.
 
 ## 2. Read in Preview
 
