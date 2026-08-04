@@ -5,7 +5,7 @@ status: maintained
 canonical: false
 source_repository: MangoFuture1210/git-leaf
 source_path: docs/user-guide.zh-CN.md
-source_revision: e48e2ac
+source_revision: 14d8ed0
 last_updated: 2026-08-04
 ai_snippet: "[使用指南] 在一个公开仓库中体验 Git Leaf 阅读、编辑、Mermaid、MDX-lite、Agent Context、Sync 与链接"
 ---
@@ -78,9 +78,10 @@ Preview 始终只读。保存后的内容仍然是原生管道表格、标准 Ma
 标准 Mermaid 围栏仍是可移植的 Markdown。Git Leaf 在 Preview 和 Live 的非活动区块中本地渲染，同时
 保留完全相同的源码和行范围。
 
-打开 [Mermaid 图](../demos/mermaid-diagrams.md)，依次尝试“适应宽度”、放大、拖动画布，再用 `</>` 在图形
-与源码之间切换。比较明确指定行列和留白的 `block-beta` 工作流与简短的自动 `flowchart`；随后切换到 Live，
-确认光标不在源码行内时仍显示同一张图。
+打开 [Mermaid 图](../demos/mermaid-diagrams.md)。在复杂 flowchart 中，确认“智能阅读”会从一个节点及其
+直接关系开始；切换到另一个节点，再选择“全部节点”恢复所有节点和关系，然后关闭并重新打开“智能阅读”。
+继续尝试“适应宽度”、缩放、拖动画布，并用 `</>` 检查准确源码。把这个按拓扑阅读的视图与明确指定行列和
+留白的 `block-beta` 图比较；随后切换到 Live，确认光标不在源码行内时仍显示图形。
 
 ## 8. Agent 读数据，人看结构化视觉
 

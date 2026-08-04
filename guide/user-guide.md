@@ -5,7 +5,7 @@ status: maintained
 canonical: false
 source_repository: MangoFuture1210/git-leaf
 source_path: docs/user-guide.md
-source_revision: e48e2ac
+source_revision: 14d8ed0
 last_updated: 2026-08-04
 ai_snippet: "[Guide] Try Git Leaf reading, editing, Mermaid, MDX-lite, Agent Context, Sync, and links in one public repository"
 ---
@@ -86,10 +86,11 @@ Open [Image editing](../demos/image-editing.md), switch to Live, and select the 
 Standard fenced Mermaid remains portable Markdown. Git Leaf renders it locally in Preview and in an
 inactive Live block, while preserving the exact source and its line range.
 
-Open [Mermaid diagrams](../demos/mermaid-diagrams.md). Use **Fit width**, zoom in, drag the enlarged
-canvas, and switch between the diagram and source with `</>`. Compare the explicit `block-beta`
-workflow map with the short automatic `flowchart`; then switch to Live and confirm that each
-block stays visual outside its source lines.
+Open [Mermaid diagrams](../demos/mermaid-diagrams.md). In the dense flowchart, confirm that **Smart
+view** starts from one node and its direct relationships. Move to another node, choose **All nodes** to
+restore every node and edge, then turn Smart view off and on. Use **Fit width**, zoom, drag, and `</>`
+to inspect the exact source. Compare that topology-driven reading view with the explicit `block-beta`
+map; then switch to Live and confirm that both blocks remain visual outside their source lines.
 
 ## 8. Keep structured data readable to agents
 
