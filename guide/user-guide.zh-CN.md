@@ -5,9 +5,9 @@ status: maintained
 canonical: false
 source_repository: MangoFuture1210/git-leaf
 source_path: docs/user-guide.zh-CN.md
-source_revision: b89ba34
-last_updated: 2026-08-02
-ai_snippet: "[使用指南] 在一个公开仓库中体验 Git Leaf 阅读、编辑、MDX-lite、Agent Context、Sync 与链接"
+source_revision: e48e2ac
+last_updated: 2026-08-04
+ai_snippet: "[使用指南] 在一个公开仓库中体验 Git Leaf 阅读、编辑、Mermaid、MDX-lite、Agent Context、Sync 与链接"
 ---
 
 # Git Leaf 使用指南 Demo
@@ -73,7 +73,16 @@ Preview 始终只读。保存后的内容仍然是原生管道表格、标准 Ma
 
 打开 [图片编辑](../demos/image-editing.md)，切换到 Live，然后选择 Git Leaf 图标。
 
-## 7. Agent 读数据，人看结构化视觉
+## 7. 阅读 Mermaid 架构图
+
+标准 Mermaid 围栏仍是可移植的 Markdown。Git Leaf 在 Preview 和 Live 的非活动区块中本地渲染，同时
+保留完全相同的源码和行范围。
+
+打开 [Mermaid 图](../demos/mermaid-diagrams.md)，依次尝试“适应宽度”、放大、拖动画布，再用 `</>` 在图形
+与源码之间切换。比较明确指定行列和留白的 `block-beta` 工作流与简短的自动 `flowchart`；随后切换到 Live，
+确认光标不在源码行内时仍显示同一张图。
+
+## 8. Agent 读数据，人看结构化视觉
 
 Git Leaf MDX-lite 只接受有限的组件集合，组件数据仍然是普通 CSV、TSV、JSON 或 Markdown 文本。`Chart`
 和 `DataTable` 还可以引用仓库内的 `.dataset.json` 数据契约，以及旁边长期维护的全量 CSV 或 JSON 数据文件。
@@ -93,21 +102,21 @@ Timeline、Chart、DecisionBox、MetricGrid 和 FlowDiagram；在外部数据集
 时间粒度。然后打开独立的 [外部数据集报表](../demos/external-dataset-report.mdx)，检查三文件契约、日期区间、
 带类型的筛选条件、预期季度结果，以及周数据源唯一可靠的周视图。
 
-## 8. 把准确上下文交给 Agent
+## 9. 把准确上下文交给 Agent
 
 带来源的行选择让离开 App 的内容仍然保留仓库路径和源码行号。还可以把多个片段整理成 Agent Context，再
 交给外部 Agent。
 
 打开 [Agent Context 与 Sync](../demos/agent-context-and-sync.md)，完成其中限定范围的选择练习。
 
-## 9. 有意识地检查和发布改动
+## 10. 有意识地检查和发布改动
 
 自动保存只负责写入本地文件。Sync 显示尚未发布的文件和远端状态；发布始终是明确的 Git 操作。Git Leaf
 不会静默发布未完成内容，也不会自动重写已经分叉的历史。
 
 Agent Context 与 Sync Demo 提供了一个可以修改、随后撤销的无害练习。
 
-## 10. 保持工具边界
+## 11. 保持工具边界
 
 Git Leaf 适合阅读、检查和小范围编辑仓库上下文。大范围代码修改应使用完整编辑器；复杂冲突使用 Git 合并
 工具；更大的仓库任务交给外部 Agent。

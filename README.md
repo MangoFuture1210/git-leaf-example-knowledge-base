@@ -38,6 +38,7 @@ If Git Leaf is already installed, use
 | [Markdown and Live](demos/markdown-live.md) | Preview, outline, Source, Live, frontmatter, links, lists, and tasks |
 | [Live table editing](demos/live-table-editing.md) | Cell editing, rectangular formatting, text highlight, column alignment, and movement |
 | [Image editing](demos/image-editing.md) | Markdown images and the Live image toolbar |
+| [Mermaid diagrams](demos/mermaid-diagrams.md) | Balanced workflow layout, local rendering, source fallback, and Live preview |
 | [Agent Context and Sync](demos/agent-context-and-sync.md) | Source-backed line selection, a focused edit, and unpublished-change inspection |
 | [MDX-lite components](demos/mdx-lite-components.mdx) | Six safe component toolbars plus source-granularity-aware external reports |
 | [External dataset report](demos/external-dataset-report.mdx) | Daily and weekly sources, typed manifests, bounded ranges, filters, and safe time views |

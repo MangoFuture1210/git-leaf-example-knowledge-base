@@ -5,9 +5,9 @@ status: maintained
 canonical: false
 source_repository: MangoFuture1210/git-leaf
 source_path: docs/user-guide.md
-source_revision: b89ba34
-last_updated: 2026-08-02
-ai_snippet: "[Guide] Try Git Leaf reading, editing, MDX-lite, Agent Context, Sync, and links in one public repository"
+source_revision: e48e2ac
+last_updated: 2026-08-04
+ai_snippet: "[Guide] Try Git Leaf reading, editing, Mermaid, MDX-lite, Agent Context, Sync, and links in one public repository"
 ---
 
 # Git Leaf user guide demo
@@ -81,7 +81,17 @@ caption is needed. The source remains inspectable and only safe image attributes
 
 Open [Image editing](../demos/image-editing.md), switch to Live, and select the Git Leaf icon.
 
-## 7. Keep structured data readable to agents
+## 7. Explore a Mermaid architecture diagram
+
+Standard fenced Mermaid remains portable Markdown. Git Leaf renders it locally in Preview and in an
+inactive Live block, while preserving the exact source and its line range.
+
+Open [Mermaid diagrams](../demos/mermaid-diagrams.md). Use **Fit width**, zoom in, drag the enlarged
+canvas, and switch between the diagram and source with `</>`. Compare the explicit `block-beta`
+workflow map with the short automatic `flowchart`; then switch to Live and confirm that each
+block stays visual outside its source lines.
+
+## 8. Keep structured data readable to agents
 
 Git Leaf MDX-lite accepts a bounded component set whose data remains ordinary CSV, TSV, JSON, or
 Markdown text. `Chart` and `DataTable` can also reference a repository-local `.dataset.json` contract
@@ -106,7 +116,7 @@ switch the same daily source among the four time intervals. Then open the dedica
 [external dataset report](../demos/external-dataset-report.mdx) to inspect the three-file contract,
 date range, typed filter, expected quarterly result, and the weekly source's single safe view.
 
-## 8. Give exact context to an agent
+## 9. Give exact context to an agent
 
 Source-backed line selection makes a passage useful outside the app without losing its repository path
 and source lines. Several passages can be collected into Agent Context before handing them to an
@@ -115,14 +125,14 @@ external agent.
 Open [Agent Context and Sync](../demos/agent-context-and-sync.md) and follow its bounded selection
 exercise.
 
-## 9. Inspect and publish changes deliberately
+## 10. Inspect and publish changes deliberately
 
 Automatic save writes the local file. Sync shows unpublished files and remote state. Publishing remains
 an explicit Git action; Git Leaf does not silently publish unfinished work or rewrite diverged history.
 
 The Agent Context and Sync demo includes a harmless edit you can make and then revert.
 
-## 10. Use the right boundary
+## 11. Use the right boundary
 
 Git Leaf is for reading, inspecting, and making focused edits to repository context. Use a full editor
 for broad code changes, a Git conflict tool for complex merges, and an external agent for larger

@@ -54,5 +54,6 @@ and return an Open in Git Leaf link for the result.
 
 - [Live table editing](live-table-editing.md)
 - [Image editing](image-editing.md)
+- [Mermaid diagrams](mermaid-diagrams.md)
 - [Agent Context and Sync](agent-context-and-sync.md)
 - [MDX-lite components](mdx-lite-components.mdx)
