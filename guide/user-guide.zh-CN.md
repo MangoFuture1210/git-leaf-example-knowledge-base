@@ -5,8 +5,8 @@ status: maintained
 canonical: false
 source_repository: MangoFuture1210/git-leaf
 source_path: docs/user-guide.zh-CN.md
-source_revision: eda6624
-last_updated: 2026-08-04
+source_revision: c6889eb
+last_updated: 2026-08-08
 ai_snippet: "[使用指南] 在一个公开仓库中体验 Git Leaf 阅读、编辑、Mermaid、MDX-lite、Agent Context、Sync 与链接"
 ---
 
@@ -27,8 +27,9 @@ Git Leaf 直接打开已经存在于本机的 Git 仓库，不会上传仓库，
 打开多个仓库时，可以点击当前仓库名称旁的仓库按钮，或在 macOS 按 `Command+O`、在 Windows 按
 `Ctrl+O`。窗口中央的仓库面板可以搜索顺序稳定的仓库列表；面板打开期间，`Command+1` 至
 `Command+9`（Windows 为 `Ctrl+1` 至 `Ctrl+9`）会选择标有相应数字的可见仓库，`Command+0` 或
-`Ctrl+0` 会打开另一个本机仓库。仓库行可以从 Git Leaf 中移除，但不会删除本机文件；worktree 选择器
-仍与仓库面板相互独立：存在多个 worktree 时，它会取代侧栏头部重复的仓库名称，仓库按钮仍显示在右侧。
+`Ctrl+0` 会打开另一个本机仓库。拖动仓库行左侧手柄可以上下调整并保存顺序；手柄获得焦点时，也可以
+使用上下方向键，面板中的数字快捷键会立即重新编号。仓库行还可以从 Git Leaf 中移除，但不会删除本机文件；
+worktree 选择器仍与仓库面板相互独立：存在多个 worktree 时，它会取代侧栏头部重复的仓库名称，仓库按钮仍显示在右侧。
 
 ## 2. 在 Preview 中阅读
 

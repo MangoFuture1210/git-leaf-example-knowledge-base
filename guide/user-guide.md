@@ -5,8 +5,8 @@ status: maintained
 canonical: false
 source_repository: MangoFuture1210/git-leaf
 source_path: docs/user-guide.md
-source_revision: eda6624
-last_updated: 2026-08-04
+source_revision: c6889eb
+last_updated: 2026-08-08
 ai_snippet: "[Guide] Try Git Leaf reading, editing, Mermaid, MDX-lite, Agent Context, Sync, and links in one public repository"
 ---
 
@@ -30,9 +30,11 @@ When several repositories are open, use the repository button beside the current
 `Command+O` on macOS and `Ctrl+O` on Windows. The centered panel can search the stable repository list;
 while it is open, `Command+1` through `Command+9` (`Ctrl+1` through `Ctrl+9` on Windows) select the
 numbered visible repositories, and `Command+0` or `Ctrl+0` opens another local repository. A row can be
-removed from Git Leaf without deleting its local files. The worktree selector remains a separate control
-from the repository panel: when multiple worktrees exist, it replaces the repeated standalone repository
-name in the sidebar header while the repository button stays beside it.
+dragged up or down by its left grip; focusing the grip and pressing the Up or Down arrow key provides the
+same saved reordering, and the visible number shortcuts update immediately. A row can also be removed
+from Git Leaf without deleting its local files. The worktree selector remains a separate control from the
+repository panel: when multiple worktrees exist, it replaces the repeated standalone repository name in
+the sidebar header while the repository button stays beside it.
 
 ## 2. Read in Preview
 
