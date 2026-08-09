@@ -40,7 +40,7 @@ interval controls; the button choice is transient UI state and does not edit thi
 <Chart
   title="Daily company revenue and expense"
   dataset="./data/company-daily.dataset.json"
-  type="line"
+  type="bar"
   x="period"
   series="revenue,expense"
   unit="CNY"
@@ -68,6 +68,9 @@ before aggregation. This example selects company `001`, then starts in the weekl
   to="2026-03-31"
   granularity="week"
   granularityOptions="day,week,month,quarter"
+  search="false"
+  freezeFirstColumn="false"
+  stickyHeader="true"
 >
 ```query
 {
@@ -91,10 +94,10 @@ only Week and does not assign weekly totals to a natural month or quarter.
 <Chart
   title="Weekly-only company revenue and expense"
   dataset="./data/company-weekly.dataset.json"
-  type="line"
   x="period"
   series="revenue,expense"
   unit="CNY"
+  labels="none"
 />
 
 ## What to inspect
