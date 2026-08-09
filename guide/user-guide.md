@@ -5,8 +5,8 @@ status: maintained
 canonical: false
 source_repository: MangoFuture1210/git-leaf
 source_path: docs/user-guide.md
-source_revision: c6889eb
-last_updated: 2026-08-08
+source_revision: a15e783
+last_updated: 2026-08-09
 ai_snippet: "[Guide] Try Git Leaf reading, editing, Mermaid, MDX-lite, Agent Context, Sync, and links in one public repository"
 ---
 
@@ -39,7 +39,9 @@ the sidebar header while the repository button stays beside it.
 ## 2. Read in Preview
 
 Preview is the read-only view for following links and reading rendered Markdown or MDX. Source-backed
-line numbers remain available, and the document outline follows the headings on the page.
+line numbers remain available, and the document outline follows H1–H5 headings on the page. A sole
+leading H1 acts as the document title. Skipped heading levels are compacted, so H3 followed by H5 uses
+two consecutive navigation depths instead of leaving an empty indentation level.
 
 Open [Markdown and Live](../demos/markdown-live.md), then try:
 

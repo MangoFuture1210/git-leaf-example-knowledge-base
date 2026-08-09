@@ -5,8 +5,8 @@ status: maintained
 canonical: false
 source_repository: MangoFuture1210/git-leaf
 source_path: docs/user-guide.zh-CN.md
-source_revision: c6889eb
-last_updated: 2026-08-08
+source_revision: a15e783
+last_updated: 2026-08-09
 ai_snippet: "[使用指南] 在一个公开仓库中体验 Git Leaf 阅读、编辑、Mermaid、MDX-lite、Agent Context、Sync 与链接"
 ---
 
@@ -33,7 +33,9 @@ worktree 选择器仍与仓库面板相互独立：存在多个 worktree 时，�
 
 ## 2. 在 Preview 中阅读
 
-Preview 用于只读浏览渲染后的 Markdown 或 MDX。文档仍保留来源行号，右侧目录会跟随页面标题。
+Preview 用于只读浏览渲染后的 Markdown 或 MDX。文档仍保留来源行号，右侧目录会跟随页面中的 H1–H5
+标题；唯一且位于开头的 H1 作为文档标题。跳过的标题级别会自动压缩，因此 H3 后直接使用 H5 时，
+导航仍然只缩进连续的两级，不会留下空层级。
 
 打开 [Markdown 与 Live](../demos/markdown-live.md)，依次尝试：
 

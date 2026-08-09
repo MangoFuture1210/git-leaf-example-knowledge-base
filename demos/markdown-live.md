@@ -3,7 +3,7 @@ title: Markdown and Live editing demo
 type: feature-demo
 status: maintained
 owner: Git Leaf maintainers
-last_updated: 2026-07-28
+last_updated: 2026-08-09
 ai_snippet: "[Demo] Preview Source Live frontmatter headings lists links tasks and source-backed lines"
 ---
 
@@ -42,6 +42,15 @@ Git Leaf keeps ordinary content in ordinary files:
 
 > Git Leaf is the human interface over a shared Git repository, not a second hosted copy of its
 > documents.
+
+#### Skipped heading levels stay compact
+
+This H4 intentionally follows an H2. Git Leaf includes it one navigation depth below the parent rather
+than preserving an empty H3 indentation level.
+
+##### H5 remains one step deeper
+
+This H5 appears one navigation depth below the H4, while the source remains ordinary portable Markdown.
 
 ## Agent-facing instruction example
 
