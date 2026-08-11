@@ -4,7 +4,7 @@ type: feature-demo
 status: maintained
 source_repository: MangoFuture1210/git-leaf
 source_path: docs/user-guide.md
-source_revision: 512223b
+source_revision: 12cf45f
 last_updated: 2026-08-11
 ai_snippet: "[Demo] Select exact source-backed lines collect Agent Context locate document edits inspect local changes and publish deliberately"
 ---
@@ -41,8 +41,9 @@ Expected behavior:
 1. automatic save writes the local Markdown file;
 2. the edited line uses a warm highlight, and **Harmless Sync exercise** uses that color across the full
    document-navigation row while still jumping here;
-3. the compact **Show deletions** control starts off; turning it on adds only a strikethrough to the
-   read-only `local` text and leaves the existing current-document line numbers unchanged;
+3. the compact **Show deletions** control starts off; turning it on adds a small solid status dot and only
+   a strikethrough to the read-only `local` text while leaving the existing current-document line numbers
+   unchanged;
 4. opening another document and returning restores the same cues;
 5. Sync shows this file as unpublished, while publishing remains an explicit action;
 6. undoing both edits returns the working tree to its previous content and clears the cues.
