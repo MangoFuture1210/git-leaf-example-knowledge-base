@@ -2,8 +2,11 @@
 title: Agent Context and Sync demo
 type: feature-demo
 status: maintained
-last_updated: 2026-07-28
-ai_snippet: "[Demo] Select exact source-backed lines collect Agent Context inspect local changes and publish deliberately"
+source_repository: MangoFuture1210/git-leaf
+source_path: docs/user-guide.md
+source_revision: ed188c5
+last_updated: 2026-08-11
+ai_snippet: "[Demo] Select exact source-backed lines collect Agent Context locate document edits inspect local changes and publish deliberately"
 ---
 
 # Agent Context and Sync
@@ -29,16 +32,23 @@ each excerpt.
 
 ## Harmless Sync exercise
 
-Change the unchecked item in Live, then inspect the **Sync** view:
+In Live, check the item and temporarily remove the word `local`, then return to Preview:
 
 - [ ] Temporary local edit for the Sync demo.
 
 Expected behavior:
 
 1. automatic save writes the local Markdown file;
-2. Sync shows this file as unpublished;
-3. publishing remains an explicit action;
-4. undoing the edit returns the working tree to its previous content.
+2. the edited line uses a warm highlight, and **Harmless Sync exercise** uses that color across the full
+   document-navigation row while still jumping here;
+3. **Show deletions** starts off; turning it on shows `local` as underlined read-only text and changes the
+   gutter to committed/current line-number columns;
+4. opening another document and returning restores the same cues;
+5. Sync shows this file as unpublished, while publishing remains an explicit action;
+6. undoing both edits returns the working tree to its previous content and clears the cues.
+
+An edit before the first visible navigation heading would use the synthetic **Document start** row. The
+in-document cues are intentionally lighter than a standard Git diff and do not stage or discard files.
 
 Do not publish the practice edit unless you intentionally want to change the public demo.
 

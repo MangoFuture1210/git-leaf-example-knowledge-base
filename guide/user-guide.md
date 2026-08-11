@@ -5,9 +5,9 @@ status: maintained
 canonical: false
 source_repository: MangoFuture1210/git-leaf
 source_path: docs/user-guide.md
-source_revision: a15e783
-last_updated: 2026-08-09
-ai_snippet: "[Guide] Try Git Leaf reading, editing, Mermaid, MDX-lite, Agent Context, Sync, and links in one public repository"
+source_revision: ed188c5
+last_updated: 2026-08-11
+ai_snippet: "[Guide] Try Git Leaf reading, editing cues, Mermaid, MDX-lite, Agent Context, Sync, and links in one public repository"
 ---
 
 # Git Leaf user guide demo
@@ -144,7 +144,19 @@ exercise.
 Automatic save writes the local file. Sync shows unpublished files and remote state. Publishing remains
 an explicit Git action; Git Leaf does not silently publish unfinished work or rewrite diverged history.
 
-The Agent Context and Sync demo includes a harmless edit you can make and then revert.
+The [Agent Context and Sync](../demos/agent-context-and-sync.md) demo includes a harmless edit you can
+make and then revert. After the edit:
+
+- current additions and replacements use a restrained warm highlight in Preview, Source, and Live;
+- the affected section uses that color across its full document-navigation row and still jumps to the
+  same heading; an edit before the first visible heading instead appears under **Document start**;
+- deleting a visible word enables the off-by-default **Show deletions** control, which reveals read-only
+  underlined text and committed/current line-number columns;
+- opening another document and returning reconstructs the same cues from the committed version and the
+  current file.
+
+This is a document locator, not a full Git diff or staging interface. Revert the practice edit when the
+exercise is complete.
 
 ## 11. Use the right boundary
 
