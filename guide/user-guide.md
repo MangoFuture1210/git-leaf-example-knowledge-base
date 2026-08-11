@@ -5,7 +5,7 @@ status: maintained
 canonical: false
 source_repository: MangoFuture1210/git-leaf
 source_path: docs/user-guide.md
-source_revision: ed188c5
+source_revision: 512223b
 last_updated: 2026-08-11
 ai_snippet: "[Guide] Try Git Leaf reading, editing cues, Mermaid, MDX-lite, Agent Context, Sync, and links in one public repository"
 ---
@@ -150,8 +150,8 @@ make and then revert. After the edit:
 - current additions and replacements use a restrained warm highlight in Preview, Source, and Live;
 - the affected section uses that color across its full document-navigation row and still jumps to the
   same heading; an edit before the first visible heading instead appears under **Document start**;
-- deleting a visible word enables the off-by-default **Show deletions** control, which reveals read-only
-  underlined text and committed/current line-number columns;
+- deleting a visible word enables the compact, off-by-default **Show deletions** control, which adds only
+  a strikethrough to the read-only deleted text and leaves the current-document line numbers unchanged;
 - opening another document and returning reconstructs the same cues from the committed version and the
   current file.
 

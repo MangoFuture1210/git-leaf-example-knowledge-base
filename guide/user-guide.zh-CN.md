@@ -5,7 +5,7 @@ status: maintained
 canonical: false
 source_repository: MangoFuture1210/git-leaf
 source_path: docs/user-guide.zh-CN.md
-source_revision: ed188c5
+source_revision: 512223b
 last_updated: 2026-08-11
 ai_snippet: "[使用指南] 在一个公开仓库中体验 Git Leaf 阅读、文档改动提示、编辑、Mermaid、MDX-lite、Agent Context、Sync 与链接"
 ---
@@ -129,8 +129,8 @@ Timeline、Chart、DecisionBox、MetricGrid 和 FlowDiagram；在外部数据集
 
 - Preview、Source 与 Live 会用低干扰暖色提示当前新增和替换内容；
 - 受影响章节在文档导航中铺满整行底色，点击仍跳到同一标题；首个可见标题以前的改动归入“文档顶部”；
-- 删除一个可见词语后，默认关闭的“显示删除内容”开关会出现；打开后可看到带下划线的只读删除文字，
-  以及“提交版本／当前文档”双行号；
+- 删除一个可见词语后，紧凑弱化、默认关闭的“显示删除内容”开关会出现；打开后只给只读删除文字增加
+  删除线，不另加颜色，原有当前文档行号保持不变；
 - 打开另一个文档再返回时，Git Leaf 会根据提交版本与当前文件重新生成同样的提示。
 
 这是一项文档定位能力，不是完整 Git diff 或暂存界面。体验完成后，请撤销练习改动。
