@@ -4,9 +4,9 @@ domain: tools
 type: demo
 owner: maintainer
 last_updated: 2026-08-01
-source: git-leaf
+source: openpeek
 canonical: false
-source_repository: MangoFuture1210/git-leaf
+source_repository: MangoFuture1210/openpeek
 source_path: docs/mdx-lite-guide.md
 source_revision: 5ec7a29
 ai_snippet: "[Demo] External CSV dataset report | typed sidecar manifest | date range | day week month quarter | Chart and DataTable"
@@ -88,7 +88,7 @@ the display component never guesses a rollup.
 ## Weekly source keeps only the weekly view
 
 The independent [weekly manifest](data/company-weekly.dataset.json) declares
-`sourceGranularity: "week"`. A calendar week can cross month and quarter boundaries, so Git Leaf shows
+`sourceGranularity: "week"`. A calendar week can cross month and quarter boundaries, so OpenPeek shows
 only Week and does not assign weekly totals to a natural month or quarter.
 
 <Chart
@@ -109,7 +109,7 @@ only Week and does not assign weekly totals to a natural month or quarter.
 - Change only `from` and `to` in a copy of this page to create another bounded report over the same full
   dataset.
 
-The query runs locally inside Git Leaf. Dataset references must stay inside the current repository;
+The query runs locally inside OpenPeek. Dataset references must stay inside the current repository;
 network URLs, arbitrary code, joins, and general SQL are not supported.
 
 ## Acceptance

@@ -2,9 +2,9 @@
 title: Agent Context and Sync demo
 type: feature-demo
 status: maintained
-source_repository: MangoFuture1210/git-leaf
+source_repository: MangoFuture1210/openpeek
 source_path: docs/user-guide.md
-source_revision: 12cf45f
+source_revision: 349ffc6
 last_updated: 2026-08-11
 ai_snippet: "[Demo] Select exact source-backed lines collect Agent Context locate document edits inspect local changes and publish deliberately"
 ---
@@ -16,8 +16,8 @@ testing Sync.
 
 ## Passage A: product boundary
 
-Git Leaf opens a local Git repository and presents it as a readable workspace. The repository remains
-the shared source of truth. Git Leaf does not upload the content or create a separate hosted copy.
+OpenPeek opens a local Git repository and presents it as a readable workspace. The repository remains
+the shared source of truth. OpenPeek does not upload the content or create a separate hosted copy.
 
 Select the two sentences above and confirm that copied context includes this file path and its exact
 source lines.
@@ -55,8 +55,8 @@ Do not publish the practice edit unless you intentionally want to change the pub
 
 ## Link handoff
 
-An Open in Git Leaf link identifies a GitHub repository and a repository-relative Markdown or MDX
-path. Git Leaf resolves that identity to a local checkout; the hosted page does not receive the
+An Open in OpenPeek link identifies a GitHub repository and a repository-relative Markdown or MDX
+path. OpenPeek resolves that identity to a local checkout; the hosted page does not receive the
 repository contents.
 
 Return to the [demo index](../README.md).

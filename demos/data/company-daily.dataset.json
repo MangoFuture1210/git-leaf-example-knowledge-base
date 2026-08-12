@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "id": "company_daily_demo",
   "title": "Company daily demo",
-  "description": "Synthetic daily data used only by the public Git Leaf MDX-lite demo.",
+  "description": "Synthetic daily data used only by the public OpenPeek MDX-lite demo.",
   "data": "./company-daily.csv",
   "format": "csv",
   "grain": ["date", "company_id"],

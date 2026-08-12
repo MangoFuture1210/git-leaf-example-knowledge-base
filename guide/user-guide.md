@@ -1,26 +1,26 @@
 ---
-title: Git Leaf user guide demo
+title: OpenPeek user guide demo
 type: user-guide-demo
 status: maintained
 canonical: false
-source_repository: MangoFuture1210/git-leaf
+source_repository: MangoFuture1210/openpeek
 source_path: docs/user-guide.md
-source_revision: 12cf45f
+source_revision: 349ffc6
 last_updated: 2026-08-11
-ai_snippet: "[Guide] Try Git Leaf reading, editing cues, Mermaid, MDX-lite, Agent Context, Sync, and links in one public repository"
+ai_snippet: "[Guide] Try OpenPeek reading, editing cues, Mermaid, MDX-lite, Agent Context, Sync, and links in one public repository"
 ---
 
-# Git Leaf user guide demo
+# OpenPeek user guide demo
 
 [简体中文](user-guide.zh-CN.md) | English
 
 This page is a runnable companion to the canonical
-[Git Leaf user guide](https://github.com/MangoFuture1210/git-leaf/blob/main/docs/user-guide.md).
+[OpenPeek user guide](https://github.com/MangoFuture1210/openpeek/blob/main/docs/user-guide.md).
 It summarizes the main path and links to files that exercise each interaction.
 
 ## 1. Open an ordinary Git repository
 
-Git Leaf opens an existing local Git repository. It does not upload the repository or create a second
+OpenPeek opens an existing local Git repository. It does not upload the repository or create a second
 copy of its documents. The directory tree, Git history, and source files remain available to every
 other Git tool.
 
@@ -32,7 +32,7 @@ while it is open, `Command+1` through `Command+9` (`Ctrl+1` through `Ctrl+9` on 
 numbered visible repositories, and `Command+0` or `Ctrl+0` opens another local repository. A row can be
 dragged up or down by its left grip; focusing the grip and pressing the Up or Down arrow key provides the
 same saved reordering, and the visible number shortcuts update immediately. A row can also be removed
-from Git Leaf without deleting its local files. The worktree selector remains a separate control from the
+from OpenPeek without deleting its local files. The worktree selector remains a separate control from the
 repository panel: when multiple worktrees exist, it replaces the repeated standalone repository name in
 the sidebar header while the repository button stays beside it.
 
@@ -91,11 +91,11 @@ Open [Live table editing](../demos/live-table-editing.md) for the complete scena
 Live can turn a Markdown image into a controlled HTML image line when an explicit width, alignment, or
 caption is needed. The source remains inspectable and only safe image attributes are retained.
 
-Open [Image editing](../demos/image-editing.md), switch to Live, and select the Git Leaf icon.
+Open [Image editing](../demos/image-editing.md), switch to Live, and select the OpenPeek icon.
 
 ## 7. Explore a Mermaid architecture diagram
 
-Standard fenced Mermaid remains portable Markdown. Git Leaf renders it locally in Preview and in an
+Standard fenced Mermaid remains portable Markdown. OpenPeek renders it locally in Preview and in an
 inactive Live block, while preserving the exact source and its line range.
 
 Open [Mermaid diagrams](../demos/mermaid-diagrams.md). In the dense flowchart, confirm that **Smart
@@ -107,13 +107,13 @@ source lines.
 
 ## 8. Keep structured data readable to agents
 
-Git Leaf MDX-lite accepts a bounded component set whose data remains ordinary CSV, TSV, JSON, or
+OpenPeek MDX-lite accepts a bounded component set whose data remains ordinary CSV, TSV, JSON, or
 Markdown text. `Chart` and `DataTable` can also reference a repository-local `.dataset.json` contract
 beside a maintained full CSV or JSON data file. The report chooses an inclusive date range and readers
 can select only views supported by its declared source granularity without changing the source data.
 Daily sources offer day, week, month, and natural-quarter views; weekly sources offer only week.
 
-Git Leaf does not execute arbitrary JSX, imports, scripts, or event handlers. Dataset aggregation uses
+OpenPeek does not execute arbitrary JSX, imports, scripts, or event handlers. Dataset aggregation uses
 only the typed fields and explicit rollups declared by the manifest.
 
 In Live, click a rendered component to keep it visual and open one compact toolbar. `DataTable` exposes
@@ -142,7 +142,7 @@ exercise.
 ## 10. Inspect and publish changes deliberately
 
 Automatic save writes the local file. Sync shows unpublished files and remote state. Publishing remains
-an explicit Git action; Git Leaf does not silently publish unfinished work or rewrite diverged history.
+an explicit Git action; OpenPeek does not silently publish unfinished work or rewrite diverged history.
 
 The [Agent Context and Sync](../demos/agent-context-and-sync.md) demo includes a harmless edit you can
 make and then revert. After the edit:
@@ -161,9 +161,9 @@ exercise is complete.
 
 ## 11. Use the right boundary
 
-Git Leaf is for reading, inspecting, and making focused edits to repository context. Use a full editor
+OpenPeek is for reading, inspecting, and making focused edits to repository context. Use a full editor
 for broad code changes, a Git conflict tool for complex merges, and an external agent for larger
 repository tasks.
 
 Return to the [demo index](../README.md) or open the
-[canonical Git Leaf documentation](https://github.com/MangoFuture1210/git-leaf/tree/main/docs).
+[canonical OpenPeek documentation](https://github.com/MangoFuture1210/openpeek/tree/main/docs).

@@ -1,33 +1,33 @@
-# Git Leaf User Guide Demo
+# OpenPeek User Guide Demo
 
 English | [简体中文](README.zh-CN.md)
 
 This is the public, runnable companion to the
-[Git Leaf](https://github.com/MangoFuture1210/git-leaf) user guide. The repository content is about Git
-Leaf itself, so the same pages remain meaningful when they appear in product screenshots, onboarding
+[OpenPeek](https://github.com/MangoFuture1210/openpeek) user guide. The repository content is about
+OpenPeek itself, so the same pages remain meaningful when they appear in product screenshots, onboarding
 walkthroughs, or manual acceptance checks.
 
-Git Leaf is the human interface over an ordinary local Git repository. People read, inspect, and make
-focused edits in Git Leaf; agents and developers work with the same files through Git and their usual
+OpenPeek is the human interface over an ordinary local Git repository. People read, inspect, and make
+focused edits in OpenPeek; agents and developers work with the same files through Git and their usual
 tools.
 
-## Try it in Git Leaf
+## Try it in OpenPeek
 
-1. [Install Git Leaf](https://gitleaf.mangofuture.com/download).
+1. [Install OpenPeek](https://gitleaf.mangofuture.com/download).
 2. Clone this repository:
 
    ```bash
-   git clone https://github.com/MangoFuture1210/git-leaf-example-knowledge-base.git
+   git clone https://github.com/MangoFuture1210/openpeek-example-knowledge-base.git
    ```
 
-3. Open the cloned folder in Git Leaf.
+3. Open the cloned folder in OpenPeek.
 
-If Git Leaf is already installed, use
-[Open in Git Leaf](https://gitleaf.mangofuture.com/open?repo=mangofuture1210%2Fgit-leaf-example-knowledge-base&path=README.md).
+If OpenPeek is already installed, use
+[Open in OpenPeek](https://gitleaf.mangofuture.com/open?repo=mangofuture1210%2Fopenpeek-example-knowledge-base&path=README.md).
 
 ## Start with the guide
 
-- [Git Leaf user guide demo](guide/user-guide.md) — a concise product tour whose links open the
+- [OpenPeek user guide demo](guide/user-guide.md) — a concise product tour whose links open the
   matching runnable examples.
 - [简体中文使用指南 Demo](guide/user-guide.zh-CN.md) — the same tour in Simplified Chinese.
 
@@ -45,7 +45,7 @@ If Git Leaf is already installed, use
 
 ## How this repository is maintained
 
-The canonical product documentation remains in the Git Leaf source repository. This demo records the
+The canonical product documentation remains in the OpenPeek source repository. This demo records the
 upstream source revision on adapted pages and is reviewed whenever a stable user-visible workflow or
 screenshot scenario changes. It intentionally excludes private data, arbitrary executable MDX, and
 regression-only edge cases.
@@ -55,4 +55,4 @@ tools that support ordinary Markdown, GFM tables, and safe inline HTML.
 
 ## License
 
-This repository is licensed under the [Apache License 2.0](LICENSE), matching Git Leaf.
+This repository is licensed under the [Apache License 2.0](LICENSE), matching OpenPeek.

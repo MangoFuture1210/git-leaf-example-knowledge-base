@@ -2,9 +2,9 @@
 title: Mermaid diagram interaction demo
 type: feature-demo
 status: maintained
-owner: Git Leaf maintainers
+owner: OpenPeek maintainers
 canonical: false
-source_repository: MangoFuture1210/git-leaf
+source_repository: MangoFuture1210/openpeek
 source_path: docs/user-guide.md
 source_revision: a295678
 last_updated: 2026-08-04
@@ -13,13 +13,13 @@ ai_snippet: "[Demo] Mermaid Smart view vertical reading complete topology source
 
 # Mermaid diagrams
 
-This page exercises Git Leaf's local rendering of standard fenced Mermaid. The saved file remains
+This page exercises OpenPeek's local rendering of standard fenced Mermaid. The saved file remains
 ordinary Markdown that agents, Obsidian, and other Mermaid-aware tools can read.
 
 ## Choose the layout for the question
 
 Use an automatic `flowchart` for a directional process. When a complete flowchart becomes too flat or
-tall to read, Git Leaf can present the complete topology from top to bottom without changing the saved
+tall to read, OpenPeek can present the complete topology from top to bottom without changing the saved
 source. It does not invent node lists or isolated one-hop diagrams. Use `block-beta`, an explicit layout,
 or author-defined subgraphs when placement and grouping carry meaning. If one picture still carries too
 many concepts, keep the overview and move individual paths into smaller diagrams.
@@ -105,7 +105,7 @@ the author's original left-to-right rendering.
 5. Use `</>` to inspect the exact Mermaid source, then return to the diagram.
 6. Switch to Live. Outside the fenced block it remains rendered; the original text is still available
    in Live or Source for editing.
-7. Change Git Leaf between light and dark appearance and confirm that the diagram follows the active
+7. Change OpenPeek between light and dark appearance and confirm that the diagram follows the active
    theme without rewriting this file.
 
 ## Continue the tour

@@ -1,34 +1,34 @@
 ---
-title: Git Leaf 使用指南 Demo
+title: OpenPeek 使用指南 Demo
 type: user-guide-demo
 status: maintained
 canonical: false
-source_repository: MangoFuture1210/git-leaf
+source_repository: MangoFuture1210/openpeek
 source_path: docs/user-guide.zh-CN.md
-source_revision: 12cf45f
+source_revision: 349ffc6
 last_updated: 2026-08-11
-ai_snippet: "[使用指南] 在一个公开仓库中体验 Git Leaf 阅读、文档改动提示、编辑、Mermaid、MDX-lite、Agent Context、Sync 与链接"
+ai_snippet: "[使用指南] 在一个公开仓库中体验 OpenPeek 阅读、文档改动提示、编辑、Mermaid、MDX-lite、Agent Context、Sync 与链接"
 ---
 
-# Git Leaf 使用指南 Demo
+# OpenPeek 使用指南 Demo
 
 [English](user-guide.md) | 简体中文
 
-这份文档是正式 [Git Leaf 用户手册](https://github.com/MangoFuture1210/git-leaf/blob/main/docs/user-guide.zh-CN.md)
+这份文档是正式 [OpenPeek 用户手册](https://github.com/MangoFuture1210/openpeek/blob/main/docs/user-guide.zh-CN.md)
 的可操作配套版本。它把主要使用路线压缩成一页，并链接到可以直接体验相应交互的文件。
 
 ## 1. 打开一个普通 Git 仓库
 
-Git Leaf 直接打开已经存在于本机的 Git 仓库，不会上传仓库，也不会再复制一套文档。目录、Git 历史和源文件
+OpenPeek 直接打开已经存在于本机的 Git 仓库，不会上传仓库，也不会再复制一套文档。目录、Git 历史和源文件
 仍然可以由其他 Git 工具、编辑器与 Agent 使用。
 
-本仓库里的内容直接介绍 Git Leaf，因此演示和截图中出现的文字也属于项目上下文。
+本仓库里的内容直接介绍 OpenPeek，因此演示和截图中出现的文字也属于项目上下文。
 
 打开多个仓库时，可以点击当前仓库名称旁的仓库按钮，或在 macOS 按 `Command+O`、在 Windows 按
 `Ctrl+O`。窗口中央的仓库面板可以搜索顺序稳定的仓库列表；面板打开期间，`Command+1` 至
 `Command+9`（Windows 为 `Ctrl+1` 至 `Ctrl+9`）会选择标有相应数字的可见仓库，`Command+0` 或
 `Ctrl+0` 会打开另一个本机仓库。拖动仓库行左侧手柄可以上下调整并保存顺序；手柄获得焦点时，也可以
-使用上下方向键，面板中的数字快捷键会立即重新编号。仓库行还可以从 Git Leaf 中移除，但不会删除本机文件；
+使用上下方向键，面板中的数字快捷键会立即重新编号。仓库行还可以从 OpenPeek 中移除，但不会删除本机文件；
 worktree 选择器仍与仓库面板相互独立：存在多个 worktree 时，它会取代侧栏头部重复的仓库名称，仓库按钮仍显示在右侧。
 
 ## 2. 在 Preview 中阅读
@@ -80,11 +80,11 @@ Preview 始终只读。保存后的内容仍然是原生管道表格、标准 Ma
 当图片需要明确宽度、对齐或说明文字时，Live 可以把 Markdown 图片转换为受控的 HTML 图片行。源码仍然
 可以检查，并且只保留安全的图片属性。
 
-打开 [图片编辑](../demos/image-editing.md)，切换到 Live，然后选择 Git Leaf 图标。
+打开 [图片编辑](../demos/image-editing.md)，切换到 Live，然后选择 OpenPeek 图标。
 
 ## 7. 阅读 Mermaid 架构图
 
-标准 Mermaid 围栏仍是可移植的 Markdown。Git Leaf 在 Preview 和 Live 的非活动区块中本地渲染，同时
+标准 Mermaid 围栏仍是可移植的 Markdown。OpenPeek 在 Preview 和 Live 的非活动区块中本地渲染，同时
 保留完全相同的源码和行范围。
 
 打开 [Mermaid 图](../demos/mermaid-diagrams.md)。在复杂 flowchart 中，确认“智能阅读”会纵向呈现完整
@@ -94,12 +94,12 @@ Preview 始终只读。保存后的内容仍然是原生管道表格、标准 Ma
 
 ## 8. Agent 读数据，人看结构化视觉
 
-Git Leaf MDX-lite 只接受有限的组件集合，组件数据仍然是普通 CSV、TSV、JSON 或 Markdown 文本。`Chart`
+OpenPeek MDX-lite 只接受有限的组件集合，组件数据仍然是普通 CSV、TSV、JSON 或 Markdown 文本。`Chart`
 和 `DataTable` 还可以引用仓库内的 `.dataset.json` 数据契约，以及旁边长期维护的全量 CSV 或 JSON 数据文件。
 报表指定包含首尾日期的区间，读者只能选择源数据粒度可靠支持的视图：日数据支持日、周、月和自然季度，
 周数据只支持周；切换视图不会改动源数据。
 
-Git Leaf 不会执行任意 JSX、import、脚本或事件处理器。数据集聚合只使用清单里明确声明的字段类型和汇总规则。
+OpenPeek 不会执行任意 JSX、import、脚本或事件处理器。数据集聚合只使用清单里明确声明的字段类型和汇总规则。
 
 在 Live 中，单击已渲染的组件会保持视觉呈现，并打开一个紧凑工具栏。`DataTable` 提供常用表格设置，
 `Chart` 提供类型和数值标签，`DecisionBox` 提供状态。无论数据在文档内还是来自外部，每个组件都只通过
@@ -121,7 +121,7 @@ Timeline、Chart、DecisionBox、MetricGrid 和 FlowDiagram；在外部数据集
 
 ## 10. 有意识地检查和发布改动
 
-自动保存只负责写入本地文件。Sync 显示尚未发布的文件和远端状态；发布始终是明确的 Git 操作。Git Leaf
+自动保存只负责写入本地文件。Sync 显示尚未发布的文件和远端状态；发布始终是明确的 Git 操作。OpenPeek
 不会静默发布未完成内容，也不会自动重写已经分叉的历史。
 
 [Agent Context 与 Sync](../demos/agent-context-and-sync.md) Demo 提供了一个可以修改、随后撤销的
@@ -131,14 +131,14 @@ Timeline、Chart、DecisionBox、MetricGrid 和 FlowDiagram；在外部数据集
 - 受影响章节在文档导航中铺满整行底色，点击仍跳到同一标题；首个可见标题以前的改动归入“文档顶部”；
 - 删除一个可见词语后，紧凑、默认关闭的“显示删除内容”开关会出现；开启时图标右上角显示实心状态点，
   只给只读删除文字增加删除线，不另加颜色，原有当前文档行号保持不变；
-- 打开另一个文档再返回时，Git Leaf 会根据提交版本与当前文件重新生成同样的提示。
+- 打开另一个文档再返回时，OpenPeek 会根据提交版本与当前文件重新生成同样的提示。
 
 这是一项文档定位能力，不是完整 Git diff 或暂存界面。体验完成后，请撤销练习改动。
 
 ## 11. 保持工具边界
 
-Git Leaf 适合阅读、检查和小范围编辑仓库上下文。大范围代码修改应使用完整编辑器；复杂冲突使用 Git 合并
+OpenPeek 适合阅读、检查和小范围编辑仓库上下文。大范围代码修改应使用完整编辑器；复杂冲突使用 Git 合并
 工具；更大的仓库任务交给外部 Agent。
 
 返回 [Demo 首页](../README.zh-CN.md)，或查看
-[Git Leaf 正式文档](https://github.com/MangoFuture1210/git-leaf/tree/main/docs)。
+[OpenPeek 正式文档](https://github.com/MangoFuture1210/openpeek/tree/main/docs)。
