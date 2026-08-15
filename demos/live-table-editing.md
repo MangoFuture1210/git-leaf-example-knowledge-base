@@ -2,10 +2,10 @@
 title: Live Markdown table editing demo
 type: feature-demo
 status: maintained
-source_repository: MangoFuture1210/openpeek
+source_repository: openglance/openglance
 source_path: docs/user-guide.md
-source_revision: c8e0eab
-last_updated: 2026-07-28
+source_revision: c5365e2
+last_updated: 2026-08-15
 ai_snippet: "[Demo] Native Markdown table cell editing rectangular formatting column alignment and reorder in Live"
 ---
 
@@ -16,12 +16,12 @@ table written to disk.
 
 ## 1. Select and format a rectangular range
 
-Drag horizontally, vertically, or diagonally across adjacent cells. OpenPeek selects the complete
+Drag horizontally, vertically, or diagonally across adjacent cells. OpenGlance selects the complete
 rectangle bounded by the first and last cell. The toolbar stays above the table instead of following
 the selection. Use it to apply bold, italic, strikethrough, foreground color, or text-only highlight
 across the range. The two color palettes expand only when opened.
 
-| OpenPeek surface | Project role | Review signal | Recommended mode |
+| OpenGlance surface | Project role | Review signal | Recommended mode |
 | :--- | :--- | :---: | :---: |
 | README | **Product entry point** | <span style="color: #16a34a; background-color: #16a34a33;">Current</span> | Preview |
 | User guide | _End-user workflow_ | <span style="color: #2563eb; background-color: #2563eb33;">Reference</span> | Preview or Live |
@@ -46,12 +46,12 @@ The editor commits and the gesture becomes a rectangular table selection.
 ## 3. Align selected columns
 
 Select one cell or a rectangle spanning several columns, then use the three alignment buttons. Every
-column touched by the selection changes alignment, even when only some body rows are selected. OpenPeek
+column touched by the selection changes alignment, even when only some body rows are selected. OpenGlance
 updates only the native Markdown separator row.
 
 | Document surface | Source owner | Priority | Status |
 | :--- | :--- | ---: | :---: |
-| Product behavior | OpenPeek source | 1 | Current |
+| Product behavior | OpenGlance source | 1 | Current |
 | User workflow | User guide | 2 | Maintained |
 | Public demonstration | This repository | 3 | Maintained |
 | Regression edge cases | Product tests | 4 | Separate |
@@ -66,7 +66,7 @@ separator, and every body cell move together.
 
 These cells are already stored with the same fixed palette written by the Live toolbar.
 
-| Signal | OpenPeek meaning | Foreground | Text highlight |
+| Signal | OpenGlance meaning | Foreground | Text highlight |
 | --- | --- | --- | --- |
 | Positive | Successful or improving | <span style="color: #16a34a;">Ready</span> | <span style="background-color: #16a34a33;">Ready</span> |
 | Risk | Blocked or unsafe | <span style="color: #dc2626;">Needs attention</span> | <span style="background-color: #dc262633;">Needs attention</span> |
@@ -84,7 +84,7 @@ These cells are already stored with the same fixed palette written by the Live t
 | Escaped pipe | Preview \| Live | `Preview \| Live` |
 | Inline code | `Preview|Live` | `` `Preview|Live` `` |
 
-OpenPeek writes native pipe-table syntax, standard Markdown emphasis, separator-row alignment, and
+OpenGlance writes native pipe-table syntax, standard Markdown emphasis, separator-row alignment, and
 narrowly controlled inline color spans. Highlight affects only the text background, not the complete
 cell. There is no font-size control. This keeps the Markdown table editable in Obsidian; MDX-lite
-remains a separate OpenPeek extension.
+remains a separate OpenGlance extension.

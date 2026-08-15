@@ -2,14 +2,14 @@
 title: Markdown and Live editing demo
 type: feature-demo
 status: maintained
-owner: OpenPeek maintainers
-last_updated: 2026-08-09
+owner: OpenGlance maintainers
+last_updated: 2026-08-15
 ai_snippet: "[Demo] Preview Source Live frontmatter headings lists links tasks and source-backed lines"
 ---
 
 # Markdown and Live editing
 
-This page is designed for OpenPeek screenshots and hands-on checks. Every visible sentence describes
+This page is designed for OpenGlance screenshots and hands-on checks. Every visible sentence describes
 the product rather than an unrelated sample organization.
 
 ## Three views, one source file
@@ -32,7 +32,7 @@ Switch modes and confirm that each view refers to this same file.
 
 ## Portable Markdown
 
-OpenPeek keeps ordinary content in ordinary files:
+OpenGlance keeps ordinary content in ordinary files:
 
 - **bold text** remains Markdown;
 - *emphasis* remains Markdown;
@@ -40,12 +40,12 @@ OpenPeek keeps ordinary content in ordinary files:
 - internal links remain repository-relative;
 - block structure remains available to agents.
 
-> OpenPeek is the human interface over a shared Git repository, not a second hosted copy of its
+> OpenGlance is the human interface over a shared Git repository, not a second hosted copy of its
 > documents.
 
 #### Skipped heading levels stay compact
 
-This H4 intentionally follows an H2. OpenPeek includes it one navigation depth below the parent rather
+This H4 intentionally follows an H2. OpenGlance includes it one navigation depth below the parent rather
 than preserving an empty H3 indentation level.
 
 ##### H5 remains one step deeper
@@ -56,7 +56,7 @@ This H5 appears one navigation depth below the H4, while the source remains ordi
 
 ```markdown
 Read AGENTS.md first. Update only the requested document, preserve portable Markdown,
-and return an Open in OpenPeek link for the result.
+and return an Open in OpenGlance link for the result.
 ```
 
 ## Continue the tour
